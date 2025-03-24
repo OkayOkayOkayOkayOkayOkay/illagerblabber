@@ -42,6 +42,13 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 
 ## 🗣️ Use alongside [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) for maximum immersion! 
 
+## ⚠️ WORK IN PROGRESS ⚠️
+Currently implemented:
+- [x] Base dialogue system
+- [x] Evoker dialogue
+- [ ] Vindicator dialogue (coming soon)
+- [ ] Pillager dialogue (coming soon)
+
 ## Future Plans
 
 - More illager types (looking at you, Illusioner)
