@@ -1,0 +1,411 @@
+{
+  "evoker.silence.01": {
+    "sounds": [{"name": "illagerblabber:evoker/silence/01", "attenuation_distance": 16}]
+  },
+
+  "evoker.ambient_noise.01": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker mutters"
+  },
+  "evoker.ambient_noise.02": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker mutters"
+  },
+  "evoker.ambient_noise.03": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker mutters"
+  },
+  "evoker.ambient_noise.04": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker grumbles"
+  },
+  "evoker.ambient_noise.05": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker grumbles"
+  },
+  "evoker.ambient_noise.06": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker grumbles"
+  },
+  "evoker.ambient_noise.07": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/07", "attenuation_distance": 16}],
+    "subtitle": "Evoker huffs"
+  },
+  "evoker.ambient_noise.08": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/08", "attenuation_distance": 16}],
+    "subtitle": "Evoker huffs"
+  },
+  "evoker.ambient_noise.09": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/09", "attenuation_distance": 16}],
+    "subtitle": "Evoker huffs"
+  },
+  "evoker.ambient_noise.10": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/10", "attenuation_distance": 16}],
+    "subtitle": "Evoker breathes"
+  },
+  "evoker.ambient_noise.11": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/11", "attenuation_distance": 16}],
+    "subtitle": "Evoker breathes"
+  },
+  "evoker.ambient_noise.12": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/12", "attenuation_distance": 16}],
+    "subtitle": "Evoker breathes"
+  },
+  "evoker.ambient_noise.13": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/13", "attenuation_distance": 16}],
+    "subtitle": "Evoker snickers"
+  },
+  "evoker.ambient_noise.14": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/14", "attenuation_distance": 16}],
+    "subtitle": "Evoker snickers"
+  },
+
+  "evoker.ambient_talk.01": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker schemes"
+  },
+  "evoker.ambient_talk.02": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker schemes"
+  },
+  "evoker.ambient_talk.03": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker schemes"
+  },
+  "evoker.ambient_talk.04": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker chatters"
+  },
+  "evoker.ambient_talk.05": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker chatters"
+  },
+  "evoker.ambient_talk.06": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker chatters"
+  },
+  "evoker.ambient_talk.07": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/07", "attenuation_distance": 16}],
+    "subtitle": "Evoker rambles"
+  },
+  "evoker.ambient_talk.08": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/08", "attenuation_distance": 16}],
+    "subtitle": "Evoker rambles"
+  },
+  "evoker.ambient_talk.09": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/09", "attenuation_distance": 16}],
+    "subtitle": "Evoker rambles"
+  },
+  "evoker.ambient_talk.10": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/10", "attenuation_distance": 16}],
+    "subtitle": "Evoker whispers"
+  },
+  "evoker.ambient_talk.11": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/11", "attenuation_distance": 16}],
+    "subtitle": "Evoker whispers"
+  },
+  "evoker.ambient_talk.12": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/12", "attenuation_distance": 16}],
+    "subtitle": "Evoker whispers"
+  },
+  "evoker.ambient_talk.13": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/13", "attenuation_distance": 16}],
+    "subtitle": "Evoker plots"
+  },
+  "evoker.ambient_talk.14": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/14", "attenuation_distance": 16}],
+    "subtitle": "Evoker plots"
+  },
+  "evoker.ambient_talk.15": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/15", "attenuation_distance": 16}],
+    "subtitle": "Evoker plots"
+  },
+  "evoker.ambient_talk.16": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/16", "attenuation_distance": 16}],
+    "subtitle": "Evoker babbles"
+  },
+  "evoker.ambient_talk.17": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/17", "attenuation_distance": 16}],
+    "subtitle": "Evoker babbles"
+  },
+  "evoker.ambient_talk.18": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/18", "attenuation_distance": 16}],
+    "subtitle": "Evoker babbles"
+  },
+  "evoker.ambient_talk.19": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/19", "attenuation_distance": 16}],
+    "subtitle": "Evoker mutters"
+  },
+  "evoker.ambient_talk.20": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/20", "attenuation_distance": 16}],
+    "subtitle": "Evoker mutters"
+  },
+  "evoker.ambient_talk.21": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/21", "attenuation_distance": 16}],
+    "subtitle": "Evoker grumbles"
+  },
+  "evoker.ambient_talk.22": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/22", "attenuation_distance": 16}],
+    "subtitle": "Evoker grumbles"
+  },
+  "evoker.ambient_talk.23": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/23", "attenuation_distance": 16}],
+    "subtitle": "Evoker monologues"
+  },
+  "evoker.ambient_talk.24": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/24", "attenuation_distance": 16}],
+    "subtitle": "Evoker monologues"
+  },
+  "evoker.ambient_talk.25": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/25", "attenuation_distance": 16}],
+    "subtitle": "Evoker monologues"
+  },
+  "evoker.ambient_talk.26": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/26", "attenuation_distance": 16}],
+    "subtitle": "Evoker gibbers"
+  },
+  "evoker.ambient_talk.27": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/27", "attenuation_distance": 16}],
+    "subtitle": "Evoker gibbers"
+  },
+  "evoker.ambient_talk.28": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/28", "attenuation_distance": 16}],
+    "subtitle": "Evoker gibbers"
+  },
+  "evoker.ambient_talk.29": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/29", "attenuation_distance": 16}],
+    "subtitle": "Evoker cackles"
+  },
+  "evoker.ambient_talk.30": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/30", "attenuation_distance": 16}],
+    "subtitle": "Evoker cackles"
+  },
+  "evoker.ambient_talk.31": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/31", "attenuation_distance": 16}],
+    "subtitle": "Evoker cackles"
+  },
+  "evoker.ambient_talk.32": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/32", "attenuation_distance": 16}],
+    "subtitle": "Evoker mumbles"
+  },
+  "evoker.ambient_talk.33": {
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/33", "attenuation_distance": 16}],
+    "subtitle": "Evoker mumbles"
+  },
+
+  "evoker.battle.01": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker threatens"
+  },
+  "evoker.battle.02": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker threatens"
+  },
+  "evoker.battle.03": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker threatens"
+  },
+  "evoker.battle.04": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker rages"
+  },
+  "evoker.battle.05": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker rages"
+  },
+  "evoker.battle.06": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker rages"
+  },
+  "evoker.battle.07": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/07", "attenuation_distance": 16}],
+    "subtitle": "Evoker curses"
+  },
+  "evoker.battle.08": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/08", "attenuation_distance": 16}],
+    "subtitle": "Evoker curses"
+  },
+  "evoker.battle.09": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/09", "attenuation_distance": 16}],
+    "subtitle": "Evoker curses"
+  },
+  "evoker.battle.10": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/10", "attenuation_distance": 16}],
+    "subtitle": "Evoker challenges"
+  },
+  "evoker.battle.11": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/11", "attenuation_distance": 16}],
+    "subtitle": "Evoker challenges"
+  },
+  "evoker.battle.12": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/12", "attenuation_distance": 16}],
+    "subtitle": "Evoker challenges"
+  },
+  "evoker.battle.13": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/13", "attenuation_distance": 16}],
+    "subtitle": "Evoker taunts"
+  },
+  "evoker.battle.14": {
+    "sounds": [{"name": "illagerblabber:evoker/battle/14", "attenuation_distance": 16}],
+    "subtitle": "Evoker taunts"
+  },
+
+  "evoker.hurt.01": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker pained"
+  },
+  "evoker.hurt.02": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker pained"
+  },
+  "evoker.hurt.03": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker pained"
+  },
+  "evoker.hurt.04": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker yelps"
+  },
+  "evoker.hurt.05": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker yelps"
+  },
+  "evoker.hurt.06": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker yelps"
+  },
+  "evoker.hurt.07": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/07", "attenuation_distance": 16}],
+    "subtitle": "Evoker suffers"
+  },
+  "evoker.hurt.08": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/08", "attenuation_distance": 16}],
+    "subtitle": "Evoker suffers"
+  },
+  "evoker.hurt.09": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/09", "attenuation_distance": 16}],
+    "subtitle": "Evoker suffers"
+  },
+  "evoker.hurt.10": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/10", "attenuation_distance": 16}],
+    "subtitle": "Evoker winces"
+  },
+  "evoker.hurt.11": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/11", "attenuation_distance": 16}],
+    "subtitle": "Evoker winces"
+  },
+  "evoker.hurt.12": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/12", "attenuation_distance": 16}],
+    "subtitle": "Evoker winces"
+  },
+  "evoker.hurt.13": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/13", "attenuation_distance": 16}],
+    "subtitle": "Evoker yowls"
+  },
+  "evoker.hurt.14": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/14", "attenuation_distance": 16}],
+    "subtitle": "Evoker yowls"
+  },
+  "evoker.hurt.15": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/15", "attenuation_distance": 16}],
+    "subtitle": "Evoker yowls"
+  },
+  "evoker.hurt.16": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/16", "attenuation_distance": 16}],
+    "subtitle": "Evoker hurts"
+  },
+  "evoker.hurt.17": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/17", "attenuation_distance": 16}],
+    "subtitle": "Evoker hurts"
+  },
+  "evoker.hurt.18": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/18", "attenuation_distance": 16}],
+    "subtitle": "Evoker hurts"
+  },
+  "evoker.hurt.19": {
+    "sounds": [{"name": "illagerblabber:evoker/hurt/19", "attenuation_distance": 16}],
+    "subtitle": "Evoker hurts"
+  },
+
+  "evoker.spotted.01": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker notices"
+  },
+  "evoker.spotted.02": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker notices"
+  },
+  "evoker.spotted.03": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker notices"
+  },
+  "evoker.spotted.04": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker alerts"
+  },
+  "evoker.spotted.05": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker alerts"
+  },
+  "evoker.spotted.06": {
+    "sounds": [{"name": "illagerblabber:evoker/spotted/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker alerts"
+  },
+
+  "evoker.victory.01": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/01", "attenuation_distance": 16}],
+    "subtitle": "Evoker gloats"
+  },
+  "evoker.victory.02": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/02", "attenuation_distance": 16}],
+    "subtitle": "Evoker gloats"
+  },
+  "evoker.victory.03": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/03", "attenuation_distance": 16}],
+    "subtitle": "Evoker gloats"
+  },
+  "evoker.victory.04": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/04", "attenuation_distance": 16}],
+    "subtitle": "Evoker celebrates"
+  },
+  "evoker.victory.05": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/05", "attenuation_distance": 16}],
+    "subtitle": "Evoker celebrates"
+  },
+  "evoker.victory.06": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/06", "attenuation_distance": 16}],
+    "subtitle": "Evoker celebrates"
+  },
+  "evoker.victory.07": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/07", "attenuation_distance": 16}],
+    "subtitle": "Evoker triumphs"
+  },
+  "evoker.victory.08": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/08", "attenuation_distance": 16}],
+    "subtitle": "Evoker triumphs"
+  },
+  "evoker.victory.09": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/09", "attenuation_distance": 16}],
+    "subtitle": "Evoker triumphs"
+  },
+  "evoker.victory.10": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/10", "attenuation_distance": 16}],
+    "subtitle": "Evoker mocks"
+  },
+  "evoker.victory.11": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/11", "attenuation_distance": 16}],
+    "subtitle": "Evoker mocks"
+  },
+  "evoker.victory.12": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/12", "attenuation_distance": 16}],
+    "subtitle": "Evoker mocks"
+  },
+  "evoker.victory.13": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/13", "attenuation_distance": 16}],
+    "subtitle": "Evoker boasts"
+  },
+  "evoker.victory.14": {
+    "sounds": [{"name": "illagerblabber:evoker/victory/14", "attenuation_distance": 16}],
+    "subtitle": "Evoker boasts"
+  }
+}

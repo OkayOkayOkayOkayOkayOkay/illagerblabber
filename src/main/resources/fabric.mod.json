@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "illagerblabber",
+	"version": "${version}",
+	"name": "IllagerBlabber",
+	"description": "Adds dynamically talking Illagers! Why? Glad you asked!",
+	"authors": [
+		"okay"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/illagerblabber/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "okay.maruko.illagerblabber.IllagerBlabber",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"illagerblabber.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
