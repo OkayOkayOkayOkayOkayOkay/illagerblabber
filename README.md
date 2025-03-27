@@ -12,7 +12,7 @@
 
 ## What is this monstrosity?
 
-IllagerBlabber adds totally necessary, definitely-not-annoying professional voice lines to Minecraft's illagers. 
+IllagerBlabber adds totally necessary, definitely-not-annoying professional voice lines to all illagers. 
 Now when a pillager is about to murder you, he'll let you know with a charming one-liner!
 
 Ever wondered what Vindicators say before chopping you in half? No? **WELL NOW YOU'LL KNOW ANYWAY.**
@@ -22,25 +22,26 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 ##  🗣️ Features That Actually Required Brain Cells to make 🗣️
 
 ### Advanced Audio System
-- Each illager type has unique voice lines (Pillagers sound crude, Vindicators sound angry, Evokers sound posh)
+- Each illager type has unique voice lines (Pillagers sound crude, Vindicators sound ANGRY, Evokers sound snobby)
 - Context-aware dialogue system (different lines when):
     - Passive
     - Spotting a player or any target for the first time
-    - Being hit
+    - Being mid-battle
+    - Getting hurt
     - Celebrating a kill (rude!) or target runs away
 
 ### Smart Sound Management
 - Dynamic cooldown system that scales based on illager density
     - No more audio hell when fighting raids!
-    - The more illagers (of one type) present, the less frequently each one speaks
-    - Mathematical formula ensuring optimal audio experience
+    - The more illagers (of one type) present, the less frequently each one speaks to prevent audio spam
+    - Mathematical formula ensuring optimal audio experience ~~_(trust me bro)_~~
 
-### Technical stuffs
+### Cool stuffs
 - Minimal performance impact
 - Fully client side
-- Configurable volume and frequency settings (for when you've had enough)
+- VERY lively illagers!
 
-## 🗣️ Use alongside [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) for maximum immersion! 
+## 🗣️ Use alongside [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) for maximum immersion!  
 
 ## ⚠️ WORK IN PROGRESS ⚠️
 Currently implemented:

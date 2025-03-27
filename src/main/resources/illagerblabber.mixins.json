@@ -3,7 +3,10 @@
 	"package": "okay.maruko.illagerblabber.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"EvokerEntityMixin"
+		"EvokerEntityMixin",
+		"LivingEntityMixin",
+		"PillagerEntityMixin",
+		"VindicatorEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

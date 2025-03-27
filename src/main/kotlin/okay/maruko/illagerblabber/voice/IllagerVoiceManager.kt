@@ -2,19 +2,268 @@ package okay.maruko.illagerblabber.voice
 
 import net.minecraft.entity.LivingEntity
 import net.minecraft.entity.mob.EvokerEntity
+import net.minecraft.entity.mob.IllagerEntity
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvent
 import net.minecraft.util.math.random.Random
 import okay.maruko.illagerblabber.IllagerSounds
 import org.slf4j.LoggerFactory
 
-class IllagerVoiceManager(private val illager: EvokerEntity) {
+class IllagerVoiceManager(private val illager: IllagerEntity, private val illagerType: IllagerType) {
+
+    private val threadSafeRandom = java.util.Random()
 
     companion object {
         private val LOGGER = LoggerFactory.getLogger("illagerblabber")
 
+        private val PILLAGER_AMBIENT_NOISE_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_01,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_02,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_03,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_04,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_05,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_06,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_07,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_08,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_09,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_10,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_11,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_12,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_13,
+            IllagerSounds.PILLAGER_AMBIENT_NOISE_14
+        )
+
+        private val PILLAGER_AMBIENT_TALK_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_AMBIENT_TALK_01,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_02,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_03,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_04,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_05,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_06,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_07,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_08,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_09,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_10,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_11,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_12,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_13,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_14,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_15,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_16,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_17,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_18,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_19,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_20,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_21,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_22,
+            IllagerSounds.PILLAGER_AMBIENT_TALK_23
+        )
+
+        private val PILLAGER_SPOTTED_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_SPOTTED_01,
+            IllagerSounds.PILLAGER_SPOTTED_02,
+            IllagerSounds.PILLAGER_SPOTTED_03,
+            IllagerSounds.PILLAGER_SPOTTED_04,
+            IllagerSounds.PILLAGER_SPOTTED_05,
+            IllagerSounds.PILLAGER_SPOTTED_06
+        )
+
+        private val PILLAGER_BATTLE_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_BATTLE_01,
+            IllagerSounds.PILLAGER_BATTLE_02,
+            IllagerSounds.PILLAGER_BATTLE_03,
+            IllagerSounds.PILLAGER_BATTLE_04,
+            IllagerSounds.PILLAGER_BATTLE_05,
+            IllagerSounds.PILLAGER_BATTLE_06,
+            IllagerSounds.PILLAGER_BATTLE_07
+        )
+
+        private val PILLAGER_HURT_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_HURT_01,
+            IllagerSounds.PILLAGER_HURT_02,
+            IllagerSounds.PILLAGER_HURT_03,
+            IllagerSounds.PILLAGER_HURT_04,
+            IllagerSounds.PILLAGER_HURT_05,
+            IllagerSounds.PILLAGER_HURT_06,
+            IllagerSounds.PILLAGER_HURT_07,
+            IllagerSounds.PILLAGER_HURT_08,
+            IllagerSounds.PILLAGER_HURT_09,
+            IllagerSounds.PILLAGER_HURT_10,
+            IllagerSounds.PILLAGER_HURT_11,
+            IllagerSounds.PILLAGER_HURT_12,
+            IllagerSounds.PILLAGER_HURT_13,
+            IllagerSounds.PILLAGER_HURT_14,
+            IllagerSounds.PILLAGER_HURT_15,
+            IllagerSounds.PILLAGER_HURT_16,
+            IllagerSounds.PILLAGER_HURT_17,
+            IllagerSounds.PILLAGER_HURT_18,
+            IllagerSounds.PILLAGER_HURT_19,
+            IllagerSounds.PILLAGER_HURT_20,
+            IllagerSounds.PILLAGER_HURT_21,
+            IllagerSounds.PILLAGER_HURT_22,
+            IllagerSounds.PILLAGER_HURT_23
+        )
+
+        private val PILLAGER_VICTORY_SOUNDS = arrayOf(
+            IllagerSounds.PILLAGER_VICTORY_01,
+            IllagerSounds.PILLAGER_VICTORY_02,
+            IllagerSounds.PILLAGER_VICTORY_03,
+            IllagerSounds.PILLAGER_VICTORY_04,
+            IllagerSounds.PILLAGER_VICTORY_05,
+            IllagerSounds.PILLAGER_VICTORY_06,
+            IllagerSounds.PILLAGER_VICTORY_07,
+            IllagerSounds.PILLAGER_VICTORY_08,
+            IllagerSounds.PILLAGER_VICTORY_09,
+            IllagerSounds.PILLAGER_VICTORY_10,
+            IllagerSounds.PILLAGER_VICTORY_11,
+            IllagerSounds.PILLAGER_VICTORY_12,
+            IllagerSounds.PILLAGER_VICTORY_13,
+            IllagerSounds.PILLAGER_VICTORY_14,
+            IllagerSounds.PILLAGER_VICTORY_15,
+            IllagerSounds.PILLAGER_VICTORY_16,
+            IllagerSounds.PILLAGER_VICTORY_17,
+            IllagerSounds.PILLAGER_VICTORY_18,
+            IllagerSounds.PILLAGER_VICTORY_19
+        )
+
+
+        private val VINDICATOR_AMBIENT_NOISE_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_01,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_02,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_03,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_04,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_05,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_06,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_07,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_08,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_09,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_10,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_11,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_12,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_13,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_14,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_15,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_16,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_17,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_18,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_19,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_20,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_21,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_22,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_23,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_24,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_25,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_26,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_27,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_28,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_29,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_30,
+            IllagerSounds.VINDICATOR_AMBIENT_NOISE_31
+        )
+        private val VINDICATOR_AMBIENT_TALK_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_01,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_02,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_03,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_04,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_05,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_06,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_07,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_08,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_09,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_10,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_11,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_12,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_13,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_14,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_15,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_16,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_17,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_18,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_19,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_20,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_21,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_22,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_23,
+            IllagerSounds.VINDICATOR_AMBIENT_TALK_24
+        )
+
+        private val VINDICATOR_BATTLE_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_BATTLE_01,
+            IllagerSounds.VINDICATOR_BATTLE_02,
+            IllagerSounds.VINDICATOR_BATTLE_03,
+            IllagerSounds.VINDICATOR_BATTLE_04,
+            IllagerSounds.VINDICATOR_BATTLE_05,
+            IllagerSounds.VINDICATOR_BATTLE_06,
+            IllagerSounds.VINDICATOR_BATTLE_07,
+            IllagerSounds.VINDICATOR_BATTLE_08,
+            IllagerSounds.VINDICATOR_BATTLE_09,
+            IllagerSounds.VINDICATOR_BATTLE_10,
+            IllagerSounds.VINDICATOR_BATTLE_11,
+            IllagerSounds.VINDICATOR_BATTLE_12,
+            IllagerSounds.VINDICATOR_BATTLE_13
+        )
+
+        private val VINDICATOR_SPOTTED_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_SPOTTED_01,
+            IllagerSounds.VINDICATOR_SPOTTED_02,
+            IllagerSounds.VINDICATOR_SPOTTED_03,
+            IllagerSounds.VINDICATOR_SPOTTED_04,
+            IllagerSounds.VINDICATOR_SPOTTED_05,
+            IllagerSounds.VINDICATOR_SPOTTED_06,
+            IllagerSounds.VINDICATOR_SPOTTED_07,
+            IllagerSounds.VINDICATOR_SPOTTED_08,
+            IllagerSounds.VINDICATOR_SPOTTED_09,
+            IllagerSounds.VINDICATOR_SPOTTED_10,
+            IllagerSounds.VINDICATOR_SPOTTED_11
+        )
+
+        private val VINDICATOR_HURT_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_HURT_01,
+            IllagerSounds.VINDICATOR_HURT_02,
+            IllagerSounds.VINDICATOR_HURT_03,
+            IllagerSounds.VINDICATOR_HURT_04,
+            IllagerSounds.VINDICATOR_HURT_05,
+            IllagerSounds.VINDICATOR_HURT_06,
+            IllagerSounds.VINDICATOR_HURT_07,
+            IllagerSounds.VINDICATOR_HURT_08,
+            IllagerSounds.VINDICATOR_HURT_09,
+            IllagerSounds.VINDICATOR_HURT_10,
+            IllagerSounds.VINDICATOR_HURT_11,
+            IllagerSounds.VINDICATOR_HURT_12,
+            IllagerSounds.VINDICATOR_HURT_13,
+            IllagerSounds.VINDICATOR_HURT_14,
+            IllagerSounds.VINDICATOR_HURT_15,
+            IllagerSounds.VINDICATOR_HURT_16,
+            IllagerSounds.VINDICATOR_HURT_17,
+            IllagerSounds.VINDICATOR_HURT_18,
+            IllagerSounds.VINDICATOR_HURT_19,
+            IllagerSounds.VINDICATOR_HURT_20,
+            IllagerSounds.VINDICATOR_HURT_21,
+            IllagerSounds.VINDICATOR_HURT_22,
+            IllagerSounds.VINDICATOR_HURT_23,
+            IllagerSounds.VINDICATOR_HURT_24,
+            IllagerSounds.VINDICATOR_HURT_25,
+            IllagerSounds.VINDICATOR_HURT_26
+        )
+
+        private val VINDICATOR_VICTORY_SOUNDS = arrayOf(
+            IllagerSounds.VINDICATOR_VICTORY_01,
+            IllagerSounds.VINDICATOR_VICTORY_02,
+            IllagerSounds.VINDICATOR_VICTORY_03,
+            IllagerSounds.VINDICATOR_VICTORY_04,
+            IllagerSounds.VINDICATOR_VICTORY_05,
+            IllagerSounds.VINDICATOR_VICTORY_06,
+            IllagerSounds.VINDICATOR_VICTORY_07,
+            IllagerSounds.VINDICATOR_VICTORY_08,
+            IllagerSounds.VINDICATOR_VICTORY_09,
+            IllagerSounds.VINDICATOR_VICTORY_10,
+            IllagerSounds.VINDICATOR_VICTORY_11,
+            IllagerSounds.VINDICATOR_VICTORY_12,
+            IllagerSounds.VINDICATOR_VICTORY_13
+        )
+
         // Sound category arrays
-        private val AMBIENT_NOISE_SOUNDS = arrayOf(
+        private val EVOKER_AMBIENT_NOISE_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_AMBIENT_NOISE_01,
             IllagerSounds.EVOKER_AMBIENT_NOISE_02,
             IllagerSounds.EVOKER_AMBIENT_NOISE_03,
@@ -31,7 +280,7 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
             IllagerSounds.EVOKER_AMBIENT_NOISE_14
         )
 
-        private val AMBIENT_TALK_SOUNDS = arrayOf(
+        private val EVOKER_AMBIENT_TALK_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_AMBIENT_TALK_01,
             IllagerSounds.EVOKER_AMBIENT_TALK_02,
             IllagerSounds.EVOKER_AMBIENT_TALK_03,
@@ -67,7 +316,7 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
             IllagerSounds.EVOKER_AMBIENT_TALK_33
         )
 
-        private val BATTLE_SOUNDS = arrayOf(
+        private val EVOKER_BATTLE_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_BATTLE_01,
             IllagerSounds.EVOKER_BATTLE_02,
             IllagerSounds.EVOKER_BATTLE_03,
@@ -84,7 +333,7 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
             IllagerSounds.EVOKER_BATTLE_14
         )
 
-        private val HURT_SOUNDS = arrayOf(
+        private val EVOKER_HURT_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_HURT_01,
             IllagerSounds.EVOKER_HURT_02,
             IllagerSounds.EVOKER_HURT_03,
@@ -106,7 +355,7 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
             IllagerSounds.EVOKER_HURT_19
         )
 
-        private val SPOTTED_SOUNDS = arrayOf(
+        private val EVOKER_SPOTTED_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_SPOTTED_01,
             IllagerSounds.EVOKER_SPOTTED_02,
             IllagerSounds.EVOKER_SPOTTED_03,
@@ -115,7 +364,7 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
             IllagerSounds.EVOKER_SPOTTED_06
         )
 
-        private val VICTORY_SOUNDS = arrayOf(
+        private val EVOKER_VICTORY_SOUNDS = arrayOf(
             IllagerSounds.EVOKER_VICTORY_01,
             IllagerSounds.EVOKER_VICTORY_02,
             IllagerSounds.EVOKER_VICTORY_03,
@@ -134,25 +383,40 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
     }
 
     init {
-        LOGGER.info("VOICE MANAGER CREATED FOR EVOKER AT ${illager.x}, ${illager.y}, ${illager.z}")
+        val typeName = when(illagerType) {
+            IllagerType.EVOKER -> "EVOKER"
+            IllagerType.VINDICATOR -> "VINDICATOR"
+            IllagerType.PILLAGER -> "PILLAGER"
+        }
+        LOGGER.info("VOICE MANAGER CREATED FOR $typeName AT ${illager.x}, ${illager.y}, ${illager.z}")
     }
 
+
+    // Updated method with illagerType parameter
     private fun adjustCooldownBasedOnCrowding(entity: LivingEntity, state: IllagerState, baseCooldown: Int): Int {
         // Skip adjustment for hurt states
         if (state is IllagerState.Hurt) {
             return baseCooldown
         }
 
-        // Get all evokers in a 15 block radius
+        // Get all illagers of the same type in a 15 block radius
         val world = entity.world
-        val nearbyEvokers = world.getEntitiesByClass(
-            EvokerEntity::class.java,
+
+        // Select the correct entity class based on illager type
+        val entityClass = when (illagerType) { // Now illagerType is accessible as an instance property
+            IllagerType.EVOKER -> net.minecraft.entity.mob.EvokerEntity::class.java
+            IllagerType.VINDICATOR -> net.minecraft.entity.mob.VindicatorEntity::class.java
+            IllagerType.PILLAGER -> net.minecraft.entity.mob.PillagerEntity::class.java
+        }
+
+        val nearbyIllagers = world.getEntitiesByClass(
+            entityClass,
             entity.boundingBox.expand(15.0)
         ) { true }
 
-        val count = nearbyEvokers.size
+        val count = nearbyIllagers.size
 
-        // If only one evoker or somehow zero, use base cooldown
+        // If only one illager or somehow zero, use base cooldown
         if (count <= 1) {
             return baseCooldown
         }
@@ -170,10 +434,12 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
         val adjustedCooldown = (baseCooldown * (1 + (count - 1) * scaleFactor)).toInt()
 
         // For debugging
-        LOGGER.info("Evoker crowd adjustment: $count nearby evokers, base cooldown $baseCooldown → $adjustedCooldown")
+        val illagerTypeName = illagerType.name.lowercase().capitalize()
+        LOGGER.info("$illagerTypeName crowd adjustment: $count nearby ${illagerTypeName}s, base cooldown $baseCooldown → $adjustedCooldown")
 
         return adjustedCooldown
     }
+
 
     // The current state of the illager
     private var currentState: IllagerState = IllagerState.Passive
@@ -201,6 +467,245 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
 
     // Duration map in ticks (seconds × 20)
     private val soundDurations = mapOf(
+        // Add these to the soundDurations map
+
+        // Add these to the soundDurations map
+
+
+        // Pillager ambient noise durations
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_01 to (0.846145 * 20).toInt(), // Track 2
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_02 to (0.624989 * 20).toInt(), // Track 3
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_03 to (0.620181 * 20).toInt(), // Track 4
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_04 to (1.139433 * 20).toInt(), // Track 5
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_05 to (0.504807 * 20).toInt(), // Track 6
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_06 to (0.826916 * 20).toInt(), // Track 7
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_07 to (1.427891 * 20).toInt(), // Track 8
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_08 to (0.716349 * 20).toInt(), // Track 9
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_09 to (0.995193 * 20).toInt(), // Track 10
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_10 to (0.870181 * 20).toInt(), // Track 11
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_11 to (0.918277 * 20).toInt(), // Track 12
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_12 to (1.235578 * 20).toInt(), // Track 13
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_13 to (1.182698 * 20).toInt(), // Track 14
+        IllagerSounds.PILLAGER_AMBIENT_NOISE_14 to (1.274036 * 20).toInt(), // Noise 2-14
+
+        // Pillager ambient talk durations
+        IllagerSounds.PILLAGER_AMBIENT_TALK_01 to (3.572109 * 20).toInt(), // Track 16
+        IllagerSounds.PILLAGER_AMBIENT_TALK_02 to (4.139433 * 20).toInt(), // Track 17
+        IllagerSounds.PILLAGER_AMBIENT_TALK_03 to (2.365374 * 20).toInt(), // Track 18
+        IllagerSounds.PILLAGER_AMBIENT_TALK_04 to (4.495193 * 20).toInt(), // Track 19
+        IllagerSounds.PILLAGER_AMBIENT_TALK_05 to (1.173084 * 20).toInt(), // Track 20
+        IllagerSounds.PILLAGER_AMBIENT_TALK_06 to (3.740385 * 20).toInt(), // Track 21
+        IllagerSounds.PILLAGER_AMBIENT_TALK_07 to (4.033651 * 20).toInt(), // Track 22
+        IllagerSounds.PILLAGER_AMBIENT_TALK_08 to (2.110567 * 20).toInt(), // Track 23
+        IllagerSounds.PILLAGER_AMBIENT_TALK_09 to (4.004807 * 20).toInt(), // Track 24
+        IllagerSounds.PILLAGER_AMBIENT_TALK_10 to (2.096145 * 20).toInt(), // Track 25
+        IllagerSounds.PILLAGER_AMBIENT_TALK_11 to (2.192313 * 20).toInt(), // Track 26
+        IllagerSounds.PILLAGER_AMBIENT_TALK_12 to (1.865374 * 20).toInt(), // Track 27
+        IllagerSounds.PILLAGER_AMBIENT_TALK_13 to (2.471156 * 20).toInt(), // Track 28
+        IllagerSounds.PILLAGER_AMBIENT_TALK_14 to (2.504807 * 20).toInt(), // Track 29
+        IllagerSounds.PILLAGER_AMBIENT_TALK_15 to (2.971156 * 20).toInt(), // Track 30
+        IllagerSounds.PILLAGER_AMBIENT_TALK_16 to (2.163469 * 20).toInt(), // Track 31
+        IllagerSounds.PILLAGER_AMBIENT_TALK_17 to (2.764422 * 20).toInt(), // Track 32
+        IllagerSounds.PILLAGER_AMBIENT_TALK_18 to (3.038458 * 20).toInt(), // Track 33
+        IllagerSounds.PILLAGER_AMBIENT_TALK_19 to (2.331723 * 20).toInt(), // Track 34
+        IllagerSounds.PILLAGER_AMBIENT_TALK_20 to (2.716349 * 20).toInt(), // Track 35
+        IllagerSounds.PILLAGER_AMBIENT_TALK_21 to (1.668277 * 20).toInt(), // Track 36
+        IllagerSounds.PILLAGER_AMBIENT_TALK_22 to (2.129819 * 20).toInt(), // Track 37
+        IllagerSounds.PILLAGER_AMBIENT_TALK_23 to (3.528844 * 20).toInt(), // Talk 16-37
+
+        // Pillager spotted durations
+        IllagerSounds.PILLAGER_SPOTTED_01 to (4.350952 * 20).toInt(), // Track 39
+        IllagerSounds.PILLAGER_SPOTTED_02 to (3.129819 * 20).toInt(), // Track 40
+        IllagerSounds.PILLAGER_SPOTTED_03 to (1.514422 * 20).toInt(), // Track 41
+        IllagerSounds.PILLAGER_SPOTTED_04 to (3.355760 * 20).toInt(), // Track 42
+        IllagerSounds.PILLAGER_SPOTTED_05 to (3.072109 * 20).toInt(), // Track 43
+        IllagerSounds.PILLAGER_SPOTTED_06 to (2.269229 * 20).toInt(), // Spotted 39-43
+
+        // Pillager battle durations
+        IllagerSounds.PILLAGER_BATTLE_01 to (0.812494 * 20).toInt(), // Track 45
+        IllagerSounds.PILLAGER_BATTLE_02 to (0.802880 * 20).toInt(), // Track 46
+        IllagerSounds.PILLAGER_BATTLE_03 to (2.447120 * 20).toInt(), // Track 47
+        IllagerSounds.PILLAGER_BATTLE_04 to (3.533651 * 20).toInt(), // Track 48
+        IllagerSounds.PILLAGER_BATTLE_05 to (3.639433 * 20).toInt(), // Track 49
+        IllagerSounds.PILLAGER_BATTLE_06 to (3.879819 * 20).toInt(), // Track 50
+        IllagerSounds.PILLAGER_BATTLE_07 to (2.086531 * 20).toInt(), // Battle 45-50
+
+        // Pillager hurt durations
+        IllagerSounds.PILLAGER_HURT_01 to (0.908662 * 20).toInt(), // Track 52
+        IllagerSounds.PILLAGER_HURT_02 to (1.100952 * 20).toInt(), // Track 53
+        IllagerSounds.PILLAGER_HURT_03 to (1.125011 * 20).toInt(), // Track 54
+        IllagerSounds.PILLAGER_HURT_04 to (0.894240 * 20).toInt(), // Track 55
+        IllagerSounds.PILLAGER_HURT_05 to (0.764422 * 20).toInt(), // Track 56
+        IllagerSounds.PILLAGER_HURT_06 to (0.769229 * 20).toInt(), // Track 57
+        IllagerSounds.PILLAGER_HURT_07 to (0.778844 * 20).toInt(), // Track 58
+        IllagerSounds.PILLAGER_HURT_08 to (0.884626 * 20).toInt(), // Track 59
+        IllagerSounds.PILLAGER_HURT_09 to (0.764422 * 20).toInt(), // Track 60
+        IllagerSounds.PILLAGER_HURT_10 to (0.788458 * 20).toInt(), // Track 61
+        IllagerSounds.PILLAGER_HURT_11 to (0.764422 * 20).toInt(), // Track 62
+        IllagerSounds.PILLAGER_HURT_12 to (0.764422 * 20).toInt(), // Track 63
+        IllagerSounds.PILLAGER_HURT_13 to (1.043265 * 20).toInt(), // Track 64
+        IllagerSounds.PILLAGER_HURT_14 to (0.865374 * 20).toInt(), // Track 65
+        IllagerSounds.PILLAGER_HURT_15 to (0.817302 * 20).toInt(), // Track 66
+        IllagerSounds.PILLAGER_HURT_16 to (1.312494 * 20).toInt(), // Track 67
+        IllagerSounds.PILLAGER_HURT_17 to (0.831723 * 20).toInt(), // Track 68
+        IllagerSounds.PILLAGER_HURT_18 to (0.793265 * 20).toInt(), // Track 69
+        IllagerSounds.PILLAGER_HURT_19 to (0.899048 * 20).toInt(), // Track 70
+        IllagerSounds.PILLAGER_HURT_20 to (0.908662 * 20).toInt(), // Track 71
+        IllagerSounds.PILLAGER_HURT_21 to (1.019229 * 20).toInt(), // Track 72
+        IllagerSounds.PILLAGER_HURT_22 to (1.076916 * 20).toInt(), // Track 73
+        IllagerSounds.PILLAGER_HURT_23 to (1.033651 * 20).toInt(), // HURT 52-73
+
+        // Pillager victory durations
+        IllagerSounds.PILLAGER_VICTORY_01 to (4.389433 * 20).toInt(), // Track 75
+        IllagerSounds.PILLAGER_VICTORY_02 to (1.658662 * 20).toInt(), // Track 76
+        IllagerSounds.PILLAGER_VICTORY_03 to (1.576916 * 20).toInt(), // Track 77
+        IllagerSounds.PILLAGER_VICTORY_04 to (1.548073 * 20).toInt(), // Track 78
+        IllagerSounds.PILLAGER_VICTORY_05 to (1.062494 * 20).toInt(), // Track 79
+        IllagerSounds.PILLAGER_VICTORY_06 to (0.923084 * 20).toInt(), // Track 80
+        IllagerSounds.PILLAGER_VICTORY_07 to (1.475964 * 20).toInt(), // Track 81
+        IllagerSounds.PILLAGER_VICTORY_08 to (2.947120 * 20).toInt(), // Track 82
+        IllagerSounds.PILLAGER_VICTORY_09 to (2.812494 * 20).toInt(), // Track 83
+        IllagerSounds.PILLAGER_VICTORY_10 to (1.846145 * 20).toInt(), // Track 84
+        IllagerSounds.PILLAGER_VICTORY_11 to (1.394240 * 20).toInt(), // Track 85
+        IllagerSounds.PILLAGER_VICTORY_12 to (1.408662 * 20).toInt(), // Track 86
+        IllagerSounds.PILLAGER_VICTORY_13 to (1.610567 * 20).toInt(), // Track 87
+        IllagerSounds.PILLAGER_VICTORY_14 to (1.408662 * 20).toInt(), // Track 88
+        IllagerSounds.PILLAGER_VICTORY_15 to (1.062494 * 20).toInt(), // Track 89
+        IllagerSounds.PILLAGER_VICTORY_16 to (1.375011 * 20).toInt(), // Track 90
+        IllagerSounds.PILLAGER_VICTORY_17 to (2.096145 * 20).toInt(), // Track 91
+        IllagerSounds.PILLAGER_VICTORY_18 to (3.413469 * 20).toInt(), // Track 92
+        IllagerSounds.PILLAGER_VICTORY_19 to (3.745193 * 20).toInt(), // Victory 75-92
+
+        // Vindicator ambient noise durations
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_01 to (0.538458 * 20).toInt(), // Track 2
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_02 to (0.394240 * 20).toInt(), // Track 3
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_03 to (0.677891 * 20).toInt(), // Track 4
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_04 to (0.865374 * 20).toInt(), // Track 5
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_05 to (0.322109 * 20).toInt(), // Track 6
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_06 to (0.389433 * 20).toInt(), // Track 7
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_07 to (0.802880 * 20).toInt(), // Track 8
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_08 to (0.543265 * 20).toInt(), // Track 9
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_09 to (0.740385 * 20).toInt(), // Track 10
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_10 to (0.543265 * 20).toInt(), // Track 11
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_11 to (0.552880 * 20).toInt(), // Track 12
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_12 to (0.552880 * 20).toInt(), // Track 13
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_13 to (0.725964 * 20).toInt(), // Track 14
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_14 to (0.370181 * 20).toInt(), // Track 15
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_15 to (0.514422 * 20).toInt(), // Track 16
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_16 to (0.947120 * 20).toInt(), // Track 17
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_17 to (1.004807 * 20).toInt(), // Track 18
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_18 to (0.543265 * 20).toInt(), // Track 19
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_19 to (0.432698 * 20).toInt(), // Track 20
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_20 to (1.235578 * 20).toInt(), // Track 21
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_21 to (1.038458 * 20).toInt(), // Track 22
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_22 to (0.596145 * 20).toInt(), // Track 23
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_23 to (1.081723 * 20).toInt(), // Track 24
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_24 to (0.802880 * 20).toInt(), // Track 25
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_25 to (0.552880 * 20).toInt(), // Track 26
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_26 to (0.423084 * 20).toInt(), // Track 27
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_27 to (0.687506 * 20).toInt(), // Track 28
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_28 to (0.923084 * 20).toInt(), // Track 29
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_29 to (0.966349 * 20).toInt(), // Track 30
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_30 to (0.490385 * 20).toInt(), // Track 31
+        IllagerSounds.VINDICATOR_AMBIENT_NOISE_31 to (0.480771 * 20).toInt(), // Track 32
+
+         // Vindicator ambient talk durations
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_01 to (1.274036 * 20).toInt(), // Track 34
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_02 to (1.870181 * 20).toInt(), // Track 35
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_03 to (1.634626 * 20).toInt(), // Track 36
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_04 to (1.692313 * 20).toInt(), // Track 37
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_05 to (1.899048 * 20).toInt(), // Track 38
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_06 to (2.759615 * 20).toInt(), // Track 39
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_07 to (1.677891 * 20).toInt(), // Track 40
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_08 to (1.697120 * 20).toInt(), // Track 41
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_09 to (1.658662 * 20).toInt(), // Track 42
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_10 to (0.923084 * 20).toInt(), // Track 43
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_11 to (1.384626 * 20).toInt(), // Track 44
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_12 to (2.158662 * 20).toInt(), // Track 45
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_13 to (1.774036 * 20).toInt(), // Track 46
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_14 to (1.629819 * 20).toInt(), // Track 47
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_15 to (1.788458 * 20).toInt(), // Track 48
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_16 to (1.826916 * 20).toInt(), // Track 49
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_17 to (2.009615 * 20).toInt(), // Track 50
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_18 to (1.365374 * 20).toInt(), // Track 51
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_19 to (1.456735 * 20).toInt(), // Track 52
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_20 to (1.783651 * 20).toInt(), // Track 53
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_21 to (1.596145 * 20).toInt(), // Track 54
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_22 to (2.326916 * 20).toInt(), // Track 55
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_23 to (3.134626 * 20).toInt(), // Track 56
+        IllagerSounds.VINDICATOR_AMBIENT_TALK_24 to (1.485578 * 20).toInt(), // Track 57
+
+        // Vindicator spotted durations
+        IllagerSounds.VINDICATOR_SPOTTED_01 to (1.480771 * 20).toInt(), // Track 59
+        IllagerSounds.VINDICATOR_SPOTTED_02 to (1.158662 * 20).toInt(), // Track 60
+        IllagerSounds.VINDICATOR_SPOTTED_03 to (1.591338 * 20).toInt(), // Track 61
+        IllagerSounds.VINDICATOR_SPOTTED_04 to (1.278844 * 20).toInt(), // Track 62
+        IllagerSounds.VINDICATOR_SPOTTED_05 to (2.067302 * 20).toInt(), // Track 63
+        IllagerSounds.VINDICATOR_SPOTTED_06 to (1.403855 * 20).toInt(), // Track 64
+        IllagerSounds.VINDICATOR_SPOTTED_07 to (1.682698 * 20).toInt(), // Track 65
+        IllagerSounds.VINDICATOR_SPOTTED_08 to (2.134626 * 20).toInt(), // Track 66
+        IllagerSounds.VINDICATOR_SPOTTED_09 to (0.937506 * 20).toInt(), // Track 67
+        IllagerSounds.VINDICATOR_SPOTTED_10 to (0.716349 * 20).toInt(), // Track 68
+        IllagerSounds.VINDICATOR_SPOTTED_11 to (1.048073 * 20).toInt(), // Track 69
+
+        // Vindicator battle durations
+        IllagerSounds.VINDICATOR_BATTLE_01 to (1.836531 * 20).toInt(), // Track 71
+        IllagerSounds.VINDICATOR_BATTLE_02 to (2.038458 * 20).toInt(), // Track 72
+        IllagerSounds.VINDICATOR_BATTLE_03 to (1.298073 * 20).toInt(), // Track 73
+        IllagerSounds.VINDICATOR_BATTLE_04 to (1.423084 * 20).toInt(), // Track 74
+        IllagerSounds.VINDICATOR_BATTLE_05 to (1.615374 * 20).toInt(), // Track 75
+        IllagerSounds.VINDICATOR_BATTLE_06 to (1.158662 * 20).toInt(), // Track 76
+        IllagerSounds.VINDICATOR_BATTLE_07 to (1.221156 * 20).toInt(), // Track 77
+        IllagerSounds.VINDICATOR_BATTLE_08 to (1.543265 * 20).toInt(), // Track 78
+        IllagerSounds.VINDICATOR_BATTLE_09 to (0.759615 * 20).toInt(), // Track 79
+        IllagerSounds.VINDICATOR_BATTLE_10 to (2.024036 * 20).toInt(), // Track 80
+        IllagerSounds.VINDICATOR_BATTLE_11 to (1.144240 * 20).toInt(), // Track 81
+        IllagerSounds.VINDICATOR_BATTLE_12 to (1.346145 * 20).toInt(), // Track 82
+        IllagerSounds.VINDICATOR_BATTLE_13 to (2.293265 * 20).toInt(), // Battle 71-82
+
+        // Vindicator hurt durations
+        IllagerSounds.VINDICATOR_HURT_01 to (0.975964 * 20).toInt(), // Track 84
+        IllagerSounds.VINDICATOR_HURT_02 to (0.822109 * 20).toInt(), // Track 85
+        IllagerSounds.VINDICATOR_HURT_03 to (0.754807 * 20).toInt(), // Track 86
+        IllagerSounds.VINDICATOR_HURT_04 to (0.750000 * 20).toInt(), // Track 87
+        IllagerSounds.VINDICATOR_HURT_05 to (0.778844 * 20).toInt(), // Track 88
+        IllagerSounds.VINDICATOR_HURT_06 to (0.850952 * 20).toInt(), // Track 89
+        IllagerSounds.VINDICATOR_HURT_07 to (0.783651 * 20).toInt(), // Track 90
+        IllagerSounds.VINDICATOR_HURT_08 to (0.745193 * 20).toInt(), // Track 91
+        IllagerSounds.VINDICATOR_HURT_09 to (0.725964 * 20).toInt(), // Track 92
+        IllagerSounds.VINDICATOR_HURT_10 to (0.706735 * 20).toInt(), // Track 93
+        IllagerSounds.VINDICATOR_HURT_11 to (0.706735 * 20).toInt(), // Track 94
+        IllagerSounds.VINDICATOR_HURT_12 to (0.649048 * 20).toInt(), // Track 95
+        IllagerSounds.VINDICATOR_HURT_13 to (0.524036 * 20).toInt(), // Track 96
+        IllagerSounds.VINDICATOR_HURT_14 to (0.514422 * 20).toInt(), // Track 97
+        IllagerSounds.VINDICATOR_HURT_15 to (0.528844 * 20).toInt(), // Track 98
+        IllagerSounds.VINDICATOR_HURT_16 to (0.471156 * 20).toInt(), // Track 99
+        IllagerSounds.VINDICATOR_HURT_17 to (0.500000 * 20).toInt(), // Track 100
+        IllagerSounds.VINDICATOR_HURT_18 to (0.485578 * 20).toInt(), // Track 101
+        IllagerSounds.VINDICATOR_HURT_19 to (0.591338 * 20).toInt(), // Track 102
+        IllagerSounds.VINDICATOR_HURT_20 to (0.548073 * 20).toInt(), // Track 103
+        IllagerSounds.VINDICATOR_HURT_21 to (0.543265 * 20).toInt(), // Track 104
+        IllagerSounds.VINDICATOR_HURT_22 to (0.480771 * 20).toInt(), // Track 105
+        IllagerSounds.VINDICATOR_HURT_23 to (0.557687 * 20).toInt(), // Track 106
+        IllagerSounds.VINDICATOR_HURT_24 to (0.764422 * 20).toInt(), // Track 107
+        IllagerSounds.VINDICATOR_HURT_25 to (0.798073 * 20).toInt(), // Track 108
+        IllagerSounds.VINDICATOR_HURT_26 to (1.081723 * 20).toInt(), // Hurt 84-108
+
+        // Vindicator victory durations
+        IllagerSounds.VINDICATOR_VICTORY_01 to (1.389433 * 20).toInt(), // Track 110
+        IllagerSounds.VINDICATOR_VICTORY_02 to (0.995193 * 20).toInt(), // Track 111
+        IllagerSounds.VINDICATOR_VICTORY_03 to (1.557687 * 20).toInt(), // Track 112
+        IllagerSounds.VINDICATOR_VICTORY_04 to (1.134626 * 20).toInt(), // Track 113
+        IllagerSounds.VINDICATOR_VICTORY_05 to (1.163469 * 20).toInt(), // Track 114
+        IllagerSounds.VINDICATOR_VICTORY_06 to (1.538458 * 20).toInt(), // Track 115
+        IllagerSounds.VINDICATOR_VICTORY_07 to (1.187506 * 20).toInt(), // Track 116
+        IllagerSounds.VINDICATOR_VICTORY_08 to (0.788458 * 20).toInt(), // Track 117
+        IllagerSounds.VINDICATOR_VICTORY_09 to (1.413469 * 20).toInt(), // Track 118
+        IllagerSounds.VINDICATOR_VICTORY_10 to (1.875011 * 20).toInt(), // Track 119
+        IllagerSounds.VINDICATOR_VICTORY_11 to (1.620181 * 20).toInt(), // Track 120
+        IllagerSounds.VINDICATOR_VICTORY_12 to (1.956735 * 20).toInt(), // Track 121
+        IllagerSounds.VINDICATOR_VICTORY_13 to (2.158662 * 20).toInt(), // Victory 110-121
+
         // Ambient noises - all 14 files
         IllagerSounds.EVOKER_AMBIENT_NOISE_01 to (1.68 * 20).toInt(),
         IllagerSounds.EVOKER_AMBIENT_NOISE_02 to (0.43 * 20).toInt(),
@@ -467,50 +972,74 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
     }
 
     // Helper methods to select random sounds from each category
+    // Helper methods to select random sounds from each category
     private fun choosePassiveSound(): SoundEvent {
-        // 40% chance for ambient noise, 60% for ambient talk (since talks are more interesting)
+        // 50% chance for ambient noise, 50% for ambient talk
         return if (random.nextInt(100) < 50) {
-            // Choose random ambient noise from all 14 options
-            AMBIENT_NOISE_SOUNDS.random(random)
+            // Choose appropriate ambient noise array
+            when (illagerType) {
+                IllagerType.EVOKER -> EVOKER_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+                IllagerType.VINDICATOR -> VINDICATOR_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+                IllagerType.PILLAGER -> PILLAGER_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+            }
         } else {
-            // Choose random ambient talk from all 33 options
-            AMBIENT_TALK_SOUNDS.random(random)
+            // Choose appropriate ambient talk array
+            when (illagerType) {
+                IllagerType.EVOKER -> EVOKER_AMBIENT_TALK_SOUNDS.random(threadSafeRandom)
+                IllagerType.VINDICATOR -> VINDICATOR_AMBIENT_TALK_SOUNDS.random(threadSafeRandom)
+                IllagerType.PILLAGER -> PILLAGER_AMBIENT_TALK_SOUNDS.random(threadSafeRandom)
+            }
         }
     }
 
+
     private fun chooseSpottedSound(): SoundEvent {
-        // Choose from all 6 spotted sounds
-        return SPOTTED_SOUNDS.random(random)
+        return when (illagerType) {
+            IllagerType.EVOKER -> EVOKER_SPOTTED_SOUNDS.random(threadSafeRandom)
+            IllagerType.VINDICATOR -> VINDICATOR_SPOTTED_SOUNDS.random(threadSafeRandom)
+            IllagerType.PILLAGER -> PILLAGER_SPOTTED_SOUNDS.random(threadSafeRandom)
+        }
     }
 
     private fun chooseCombatSound(): SoundEvent {
         // 30% chance for ambient noise, 70% for battle sound during combat
         return if (random.nextInt(100) < 30) {
-            // Choose random ambient noise from all 14 options
-            AMBIENT_NOISE_SOUNDS.random(random)
+            when (illagerType) {
+                IllagerType.EVOKER -> EVOKER_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+                IllagerType.VINDICATOR -> VINDICATOR_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+                IllagerType.PILLAGER -> PILLAGER_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
+            }
         } else {
-            // Choose from all 14 battle sounds
-            BATTLE_SOUNDS.random(random)
+            when (illagerType) {
+                IllagerType.EVOKER -> EVOKER_BATTLE_SOUNDS.random(threadSafeRandom)
+                IllagerType.VINDICATOR -> VINDICATOR_BATTLE_SOUNDS.random(threadSafeRandom)
+                IllagerType.PILLAGER -> PILLAGER_BATTLE_SOUNDS.random(threadSafeRandom)
+            }
         }
     }
 
     private fun chooseHurtSound(): SoundEvent {
-        // Choose from all 19 hurt sounds
-        return HURT_SOUNDS.random(random)
+        return when (illagerType) {
+            IllagerType.EVOKER -> EVOKER_HURT_SOUNDS.random(threadSafeRandom)
+            IllagerType.VINDICATOR -> VINDICATOR_HURT_SOUNDS.random(threadSafeRandom)
+            IllagerType.PILLAGER -> PILLAGER_HURT_SOUNDS.random(threadSafeRandom)
+        }
     }
 
     private fun chooseVictorySound(): SoundEvent {
-        // Choose from all 14 victory sounds
-        return VICTORY_SOUNDS.random(random)
+        return when (illagerType) {
+            IllagerType.EVOKER -> EVOKER_VICTORY_SOUNDS.random(threadSafeRandom)
+            IllagerType.VINDICATOR -> VINDICATOR_VICTORY_SOUNDS.random(threadSafeRandom)
+            IllagerType.PILLAGER -> PILLAGER_VICTORY_SOUNDS.random(threadSafeRandom)
+        }
     }
 
-    private fun playSound(sound: SoundEvent) {
-        //LOGGER.info("PLAYING SOUND: $sound at ${illager.x}, ${illager.y}, ${illager.z}")
 
-        // Generate a random pitch variation - favoring lower pitches for more menacing sound
+    private fun playSound(sound: SoundEvent) {
+        // Use threadSafeRandom instead of world random
         val randomPitch = when (currentState) {
-            is IllagerState.Hurt -> 0.9f + random.nextFloat() * 0.25f  // Range: 0.75-1.0
-            else -> 0.9f + random.nextFloat() * 0.1f  // Range: 0.8-1.0
+            is IllagerState.Hurt -> 0.9f + threadSafeRandom.nextFloat() * 0.25f  // Range: 0.75-1.0
+            else -> 0.9f + threadSafeRandom.nextFloat() * 0.1f  // Range: 0.8-1.0
         }
 
         illager.world.playSound(
@@ -537,5 +1066,5 @@ class IllagerVoiceManager(private val illager: EvokerEntity) {
     }
 
     // Helper extension to pick a random element from an array
-    private fun <T> Array<T>.random(random: Random): T = this[random.nextInt(this.size)]
+    private fun <T> Array<T>.random(random: java.util.Random): T = this[random.nextInt(this.size)]
 }
