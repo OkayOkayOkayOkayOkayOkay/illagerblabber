@@ -1,9 +1,11 @@
 package okay.maruko.illagerblabber.mixin;
 
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.PillagerEntity;
 import net.minecraft.entity.mob.IllagerEntity;
+import net.minecraft.entity.raid.RaiderEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.world.World;
 import okay.maruko.illagerblabber.IllagerSounds;
@@ -28,6 +30,8 @@ public abstract class PillagerEntityMixin extends IllagerEntity {
     protected PillagerEntityMixin(EntityType<? extends IllagerEntity> entityType, World world) {
         super(entityType, world);
     }
+
+
 
     @Inject(method = "getHurtSound", at = @At("HEAD"), cancellable = true)
     private void onHurt(DamageSource source, CallbackInfoReturnable<SoundEvent> cir) {

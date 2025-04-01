@@ -4,8 +4,8 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"EvokerEntityMixin",
-		"LivingEntityMixin",
 		"PillagerEntityMixin",
+		"RaiderEntityMixin",
 		"VindicatorEntityMixin"
 	],
 	"injectors": {

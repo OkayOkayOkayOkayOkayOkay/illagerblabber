@@ -22,6 +22,8 @@ object IllagerVoiceRegistry {
     private val lastProcessedTick = ConcurrentHashMap<UUID, Long>()
     private var currentGameTick: Long = 0
 
+    private val safeRandom = java.util.Random()
+    private val lastPillagerTargets = ConcurrentHashMap<UUID, UUID?>()
     // Special tracking for Vindicators
     private val lastVindicatorTargets = ConcurrentHashMap<UUID, UUID?>()
 
@@ -76,7 +78,6 @@ object IllagerVoiceRegistry {
     @JvmStatic
     fun updateIllager(illager: IllagerEntity, illagerType: IllagerType) {
         val id = illager.uuid
-
         // Increment game tick counter
         currentGameTick++
 
@@ -140,7 +141,7 @@ object IllagerVoiceRegistry {
                 // Target is gone - force a short victory state
                 LOGGER.info("FORCING VINDICATOR VICTORY!")
                 voiceManager.setState(IllagerState.Victory)
-                victoryTimers[id] = 60 //3 second victory period
+                victoryTimers[id] = 60 //3 seconds victory period
                 hadTargetLastTick[id] = false
                 lastVindicatorTargets.remove(vindicatorId)
                 return // Skip the rest of the processing
@@ -155,7 +156,27 @@ object IllagerVoiceRegistry {
                 LOGGER.info("VINDICATOR VICTORY CONDITION MET!")
             }
         }
+        if (illagerType == IllagerType.PILLAGER) {
+            val pillagerId = illager.uuid
 
+            if (hasTarget) {
+                // Store current target ID
+                lastPillagerTargets.getOrPut(pillagerId) { illager.target!!.uuid }
+            } else if (hadTarget && lastPillagerTargets.containsKey(pillagerId)) {
+                // Target is gone - force a short victory state
+                LOGGER.info("FORCING PILLAGER VICTORY!")
+                voiceManager.setState(IllagerState.Victory)
+                victoryTimers[id] = 60 // 3 second victory period
+                hadTargetLastTick[id] = false
+                lastPillagerTargets.remove(pillagerId)
+                return // Skip the rest of the processing
+            }
+
+            // Additional logging
+            if (!hasTarget && hadTarget) {
+                LOGGER.info("PILLAGER LOST TARGET - Combat debounce: $combatDebounceTimer")
+            }
+        }
         if (hasTarget) {
             // We have a valid target
             if (!hadTarget) {
@@ -166,7 +187,7 @@ object IllagerVoiceRegistry {
             }
 
             // Reset combat debounce timer whenever we have a valid target
-            combatDebounceTimer = 60 + illager.random.nextInt(41) // 3-5 seconds
+            combatDebounceTimer = 60 + safeRandom.nextInt(41) //3-5 seconds
             combatDebounceTimers[id] = combatDebounceTimer
         } else {
             // We don't have a target right now
