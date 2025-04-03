@@ -17,7 +17,7 @@ Now when a pillager is about to murder you, he'll let you know with a charming o
 
 Ever wondered what Vindicators say before chopping you in half? No? **WELL NOW YOU'LL KNOW ANYWAY.**
 
-All the voice lines are vanilla friendly, essentially mimicking their Vanilla voices!!
+All the voice lines are vanilla friendly, essentially mimicking their Vanilla voices! ~~_(I tried my best)_~~
 
 ##  🗣️ Features That Actually Required Brain Cells to make 🗣️
 
