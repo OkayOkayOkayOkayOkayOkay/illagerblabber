@@ -41,14 +41,7 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 - Fully client side
 - VERY lively illagers!
 
-## 🗣️ Use alongside [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) for maximum immersion!  
-
-## ⚠️ WORK IN PROGRESS ⚠️
-Currently implemented:
-- [x] Base dialogue system
-- [x] Evoker dialogue
-- [ ] Vindicator dialogue (coming soon)
-- [ ] Pillager dialogue (coming soon)
+## 🗣️ Use alongside [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) for maximum immersion!
 
 ## Future Plans
 
