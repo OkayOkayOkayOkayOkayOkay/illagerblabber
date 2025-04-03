@@ -1,7 +1,37 @@
+
 plugins {
 	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id 'maven-publish'
 	id "org.jetbrains.kotlin.jvm" version "2.1.20"
+}
+import java.util.Properties
+
+// Load versions
+def mcVersionsFile = file("gradle/mcversions.properties")
+def mcVersionProps = new Properties()
+mcVersionsFile.withInputStream { mcVersionProps.load(it) }
+
+// Get target version (default to current if not specified)
+def targetMcVersion = project.findProperty("mcVersion") ?: "1.21.1"
+def versionData = mcVersionProps.getProperty("version.$targetMcVersion")?.split(",")
+if (versionData == null) {
+	throw new GradleException("Unknown Minecraft version: $targetMcVersion")
+}
+
+// Parse version data
+def mcVersion = versionData[0]
+def yarnVersion = versionData[1]
+def loaderVersion = versionData[2]
+def fabricVersion = versionData[3]
+def kotlinVersion = versionData[4]
+
+// Update project properties
+ext {
+	minecraft_version = mcVersion
+	yarn_mappings = yarnVersion
+	loader_version = loaderVersion
+	fabric_version = fabricVersion
+	fabric_kotlin_version = kotlinVersion
 }
 
 version = project.mod_version
