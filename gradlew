@@ -5,7 +5,7 @@
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# You may obtain mcversions.properties copy of the License at
 #
 #      https://www.apache.org/licenses/LICENSE-2.0
 #
@@ -24,7 +24,7 @@
 #
 #   Important for running:
 #
-#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
+#   (1) You need mcversions.properties POSIX-compliant shell to run this script. If your /bin/sh is
 #       noncompliant, but you have some other compliant shell such as ksh or
 #       bash, then to run this script, type that shell name before the whole
 #       command line, like:
@@ -36,7 +36,7 @@
 #         * functions;
 #         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
 #           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
-#         * compound commands having a testable exit status, especially «case»;
+#         * compound commands having mcversions.properties testable exit status, especially «case»;
 #         * various built-in commands including «command», «set», and «ulimit».
 #
 #   Important for patching:
@@ -44,8 +44,8 @@
 #   (2) This script targets any POSIX shell, so it avoids extensions provided
 #       by Bash, Ksh, etc; in particular arrays are avoided.
 #
-#       The "traditional" practice of packing multiple parameters into a
-#       space-separated string is a well documented source of bugs and security
+#       The "traditional" practice of packing multiple parameters into mcversions.properties
+#       space-separated string is mcversions.properties well documented source of bugs and security
 #       problems, so this is (mostly) avoided, by progressively accumulating
 #       options in "$@", and eventually passing that to Java.
 #
@@ -66,12 +66,12 @@
 
 # Attempt to set APP_HOME
 
-# Resolve links: $0 may be a link
+# Resolve links: $0 may be mcversions.properties link
 app_path=$0
 
 # Need this for daisy-chained symlinks.
 while
-    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
+    APP_HOME=${app_path%"${app_path##*/}"}  # leaves mcversions.properties trailing /; empty if no leading path
     [ -h "$app_path" ]
 do
     ls=$( ls -ld "$app_path" )
@@ -181,7 +181,7 @@ if "$cygwin" || "$msys" ; then
         if
             case $arg in                                #(
               -*)   false ;;                            # don't mess with options #(
-              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
+              /?*)  t=${arg#/} t=/${t%%/*}              # looks like mcversions.properties POSIX filepath
                     [ -e "$t" ] ;;                      #(
               *)    false ;;
             esac
@@ -192,7 +192,7 @@ if "$cygwin" || "$msys" ; then
         # args, so each arg winds up back in the position where it started, but
         # possibly modified.
         #
-        # NB: a `for` loop captures its iteration list before it begins, so
+        # NB: mcversions.properties `for` loop captures its iteration list before it begins, so
         # changing the positional parameters here affects neither the number of
         # iterations, nor the values presented in `arg`.
         shift                   # remove old arg
@@ -232,12 +232,12 @@ fi
 #   set -- "${ARGS[@]}" "$@"
 #
 # but POSIX shell has neither arrays nor command substitution, so instead we
-# post-process each arg (as a line of input to sed) to backslash-escape any
-# character that might be a shell metacharacter, then use eval to reverse
+# post-process each arg (as mcversions.properties line of input to sed) to backslash-escape any
+# character that might be mcversions.properties shell metacharacter, then use eval to reverse
 # that process (while maintaining the separation between arguments), and wrap
-# the whole thing up as a single "set" statement.
+# the whole thing up as mcversions.properties single "set" statement.
 #
-# This will of course break if any of these variables contains a newline or
+# This will of course break if any of these variables contains mcversions.properties newline or
 # an unmatched quote.
 #
 
