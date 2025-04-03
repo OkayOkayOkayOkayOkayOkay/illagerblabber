@@ -1,6 +1,8 @@
 package okay.maruko.illagerblabber.mixin;
 
+import net.minecraft.entity.mob.EvokerEntity;
 import net.minecraft.entity.mob.PillagerEntity;
+import net.minecraft.entity.mob.VindicatorEntity;
 import net.minecraft.entity.raid.RaiderEntity;
 import okay.maruko.illagerblabber.voice.IllagerType;
 import okay.maruko.illagerblabber.voice.IllagerVoiceRegistry;
@@ -17,10 +19,19 @@ public class RaiderEntityMixin {
         if (!((RaiderEntity) (Object) this).getWorld().isClient) {
             if ((Object) this instanceof PillagerEntity) {
                 PillagerEntity pillager = (PillagerEntity) (Object) this;
-                IllagerVoiceRegistry.updateIllager(pillager, IllagerType.PILLAGER);
+                IllagerVoiceRegistry.INSTANCE.updateIllager(pillager, IllagerType.PILLAGER);
+            }
+            // Add these cases
+            else if ((Object) this instanceof EvokerEntity) {
+                EvokerEntity evoker = (EvokerEntity) (Object) this;
+                IllagerVoiceRegistry.INSTANCE.updateIllager(evoker, IllagerType.EVOKER);
+            }
+            else if ((Object) this instanceof VindicatorEntity) {
+                VindicatorEntity vindicator = (VindicatorEntity) (Object) this;
+                IllagerVoiceRegistry.INSTANCE.updateIllager(vindicator, IllagerType.VINDICATOR);
             }
         }
     }
-
 }
+
 

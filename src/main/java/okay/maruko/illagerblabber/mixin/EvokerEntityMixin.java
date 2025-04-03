@@ -30,11 +30,6 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
         super(entityType, world);
     }
 
-    @Inject(method = "mobTick", at = @At("TAIL"))
-    private void onMobTick(CallbackInfo ci) {
-        EvokerEntity evoker = (EvokerEntity)(Object)this;
-        IllagerVoiceRegistry.INSTANCE.updateIllager(evoker, IllagerType.EVOKER);
-    }
 
     @Inject(method = "getCelebratingSound", at = @At("HEAD"), cancellable = true)
     private void onGetCelebratingSound(CallbackInfoReturnable<SoundEvent> cir) {

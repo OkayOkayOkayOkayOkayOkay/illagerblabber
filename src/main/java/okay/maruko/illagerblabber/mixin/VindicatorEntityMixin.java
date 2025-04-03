@@ -29,12 +29,6 @@ public abstract class VindicatorEntityMixin extends IllagerEntity {
         super(entityType, world);
     }
 
-    @Inject(method = "mobTick", at = @At("TAIL"))
-    private void onMobTick(CallbackInfo ci) {
-        VindicatorEntity vindicator = (VindicatorEntity)(Object)this;
-        IllagerVoiceRegistry.updateIllager(vindicator, IllagerType.VINDICATOR);
-    }
-
     @Inject(method = "getHurtSound", at = @At("HEAD"), cancellable = true)
     private void onHurt(DamageSource source, CallbackInfoReturnable<SoundEvent> cir) {
         VindicatorEntity vindicator = (VindicatorEntity)(Object)this;
