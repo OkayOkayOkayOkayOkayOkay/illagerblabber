@@ -15,19 +15,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class RaiderEntityMixin {
     @Inject(method = "tickMovement", at = @At("TAIL"))
     private void onTickMovement(CallbackInfo ci) {
-        // Check if we're on server-side
+
         if (!((RaiderEntity) (Object) this).getWorld().isClient) {
-            if ((Object) this instanceof PillagerEntity) {
-                PillagerEntity pillager = (PillagerEntity) (Object) this;
+            if ((Object) this instanceof PillagerEntity pillager) {
                 IllagerVoiceRegistry.INSTANCE.updateIllager(pillager, IllagerType.PILLAGER);
             }
-            // Add these cases
-            else if ((Object) this instanceof EvokerEntity) {
-                EvokerEntity evoker = (EvokerEntity) (Object) this;
+            else if ((Object) this instanceof EvokerEntity evoker) {
                 IllagerVoiceRegistry.INSTANCE.updateIllager(evoker, IllagerType.EVOKER);
             }
-            else if ((Object) this instanceof VindicatorEntity) {
-                VindicatorEntity vindicator = (VindicatorEntity) (Object) this;
+            else if ((Object) this instanceof VindicatorEntity vindicator) {
                 IllagerVoiceRegistry.INSTANCE.updateIllager(vindicator, IllagerType.VINDICATOR);
             }
         }

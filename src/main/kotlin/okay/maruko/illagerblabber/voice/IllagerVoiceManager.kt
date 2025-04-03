@@ -995,7 +995,6 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
     }
 
     // Helper methods to select random sounds from each category
-    // Helper methods to select random sounds from each category
     private fun choosePassiveSound(): SoundEvent {
         // 50% chance for ambient noise, 50% for ambient talk
         return if (random.nextInt(100) < 50) {
@@ -1059,7 +1058,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
 
 
     private fun playSound(sound: SoundEvent) {
-        // Use threadSafeRandom instead of world random
+
         val randomPitch = when (currentState) {
             is IllagerState.Hurt -> 0.9f + threadSafeRandom.nextFloat() * 0.25f  // Range: 0.75-1.0
             else -> 0.9f + threadSafeRandom.nextFloat() * 0.1f  // Range: 0.8-1.0

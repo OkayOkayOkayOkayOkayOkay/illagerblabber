@@ -1,1262 +1,1262 @@
 {
   "pillager.ambient_noise.01": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/01", "attenuation_distance": 13}],
     "subtitle": "Pillager sighs"
   },
   "pillager.ambient_noise.02": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/02", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_noise.03": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/03", "attenuation_distance": 13}],
     "subtitle": "Pillager mutters"
   },
   "pillager.ambient_noise.04": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/04", "attenuation_distance": 13}],
     "subtitle": "Pillager huffs"
   },
   "pillager.ambient_noise.05": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/05", "attenuation_distance": 13}],
     "subtitle": "Pillager groans"
   },
   "pillager.ambient_noise.06": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/06", "attenuation_distance": 13}],
     "subtitle": "Pillager sighs"
   },
   "pillager.ambient_noise.07": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/07", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_noise.08": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/08", "attenuation_distance": 13}],
     "subtitle": "Pillager mutters"
   },
   "pillager.ambient_noise.09": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/09", "attenuation_distance": 13}],
     "subtitle": "Pillager huffs"
   },
   "pillager.ambient_noise.10": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/10", "attenuation_distance": 13}],
     "subtitle": "Pillager groans"
   },
   "pillager.ambient_noise.11": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/11", "attenuation_distance": 13}],
     "subtitle": "Pillager sighs"
   },
   "pillager.ambient_noise.12": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/12", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_noise.13": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/13", "attenuation_distance": 13}],
     "subtitle": "Pillager mutters"
   },
   "pillager.ambient_noise.14": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_noise/14", "attenuation_distance": 13}],
     "subtitle": "Pillager huffs"
   },
 
   "pillager.ambient_talk.01": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/01", "attenuation_distance": 13}],
     "subtitle": "Pillager complains"
   },
   "pillager.ambient_talk.02": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/02", "attenuation_distance": 13}],
     "subtitle": "Pillager whines"
   },
   "pillager.ambient_talk.03": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/03", "attenuation_distance": 13}],
     "subtitle": "Pillager gripes"
   },
   "pillager.ambient_talk.04": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/04", "attenuation_distance": 13}],
     "subtitle": "Pillager moans"
   },
   "pillager.ambient_talk.05": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/05", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_talk.06": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/06", "attenuation_distance": 13}],
     "subtitle": "Pillager complains"
   },
   "pillager.ambient_talk.07": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/07", "attenuation_distance": 13}],
     "subtitle": "Pillager whines"
   },
   "pillager.ambient_talk.08": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/08", "attenuation_distance": 13}],
     "subtitle": "Pillager gripes"
   },
   "pillager.ambient_talk.09": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/09", "attenuation_distance": 13}],
     "subtitle": "Pillager moans"
   },
   "pillager.ambient_talk.10": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/10", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_talk.11": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/11", "attenuation_distance": 13}],
     "subtitle": "Pillager complains"
   },
   "pillager.ambient_talk.12": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/12", "attenuation_distance": 13}],
     "subtitle": "Pillager whines"
   },
   "pillager.ambient_talk.13": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/13", "attenuation_distance": 13}],
     "subtitle": "Pillager gripes"
   },
   "pillager.ambient_talk.14": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/14", "attenuation_distance": 13}],
     "subtitle": "Pillager moans"
   },
   "pillager.ambient_talk.15": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/15", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_talk.16": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/16", "attenuation_distance": 13}],
     "subtitle": "Pillager complains"
   },
   "pillager.ambient_talk.17": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/17", "attenuation_distance": 13}],
     "subtitle": "Pillager whines"
   },
   "pillager.ambient_talk.18": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/18", "attenuation_distance": 13}],
     "subtitle": "Pillager gripes"
   },
   "pillager.ambient_talk.19": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/19", "attenuation_distance": 13}],
     "subtitle": "Pillager moans"
   },
   "pillager.ambient_talk.20": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/20", "attenuation_distance": 13}],
     "subtitle": "Pillager grumbles"
   },
   "pillager.ambient_talk.21": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/21", "attenuation_distance": 13}],
     "subtitle": "Pillager complains"
   },
   "pillager.ambient_talk.22": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/22", "attenuation_distance": 13}],
     "subtitle": "Pillager whines"
   },
   "pillager.ambient_talk.23": {
-    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/ambient_talk/23", "attenuation_distance": 13}],
     "subtitle": "Pillager gripes"
   },
 
   "pillager.battle.01": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/01", "attenuation_distance": 13}],
     "subtitle": "Pillager shouts"
   },
   "pillager.battle.02": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/02", "attenuation_distance": 13}],
     "subtitle": "Pillager yells"
   },
   "pillager.battle.03": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/03", "attenuation_distance": 13}],
     "subtitle": "Pillager fights"
   },
   "pillager.battle.04": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/04", "attenuation_distance": 13}],
     "subtitle": "Pillager attacks"
   },
   "pillager.battle.05": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/05", "attenuation_distance": 13}],
     "subtitle": "Pillager charges"
   },
   "pillager.battle.06": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/06", "attenuation_distance": 13}],
     "subtitle": "Pillager shouts"
   },
   "pillager.battle.07": {
-    "sounds": [{"name": "illagerblabber:pillager/battle/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/battle/07", "attenuation_distance": 13}],
     "subtitle": "Pillager yells"
   },
 
   "pillager.hurt.01": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/01", "attenuation_distance": 13}],
     "subtitle": "Pillager yelps"
   },
   "pillager.hurt.02": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/02", "attenuation_distance": 13}],
     "subtitle": "Pillager cries"
   },
   "pillager.hurt.03": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/03", "attenuation_distance": 13}],
     "subtitle": "Pillager wails"
   },
   "pillager.hurt.04": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/04", "attenuation_distance": 13}],
     "subtitle": "Pillager suffers"
   },
   "pillager.hurt.05": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/05", "attenuation_distance": 13}],
     "subtitle": "Pillager hurts"
   },
   "pillager.hurt.06": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/06", "attenuation_distance": 13}],
     "subtitle": "Pillager yelps"
   },
   "pillager.hurt.07": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/07", "attenuation_distance": 13}],
     "subtitle": "Pillager cries"
   },
   "pillager.hurt.08": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/08", "attenuation_distance": 13}],
     "subtitle": "Pillager wails"
   },
   "pillager.hurt.09": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/09", "attenuation_distance": 13}],
     "subtitle": "Pillager suffers"
   },
   "pillager.hurt.10": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/10", "attenuation_distance": 13}],
     "subtitle": "Pillager hurts"
   },
   "pillager.hurt.11": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/11", "attenuation_distance": 13}],
     "subtitle": "Pillager yelps"
   },
   "pillager.hurt.12": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/12", "attenuation_distance": 13}],
     "subtitle": "Pillager cries"
   },
   "pillager.hurt.13": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/13", "attenuation_distance": 13}],
     "subtitle": "Pillager wails"
   },
   "pillager.hurt.14": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/14", "attenuation_distance": 13}],
     "subtitle": "Pillager suffers"
   },
   "pillager.hurt.15": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/15", "attenuation_distance": 13}],
     "subtitle": "Pillager hurts"
   },
   "pillager.hurt.16": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/16", "attenuation_distance": 13}],
     "subtitle": "Pillager yelps"
   },
   "pillager.hurt.17": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/17", "attenuation_distance": 13}],
     "subtitle": "Pillager cries"
   },
   "pillager.hurt.18": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/18", "attenuation_distance": 13}],
     "subtitle": "Pillager wails"
   },
   "pillager.hurt.19": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/19", "attenuation_distance": 13}],
     "subtitle": "Pillager suffers"
   },
   "pillager.hurt.20": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/20", "attenuation_distance": 13}],
     "subtitle": "Pillager hurts"
   },
   "pillager.hurt.21": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/21", "attenuation_distance": 13}],
     "subtitle": "Pillager yelps"
   },
   "pillager.hurt.22": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/22", "attenuation_distance": 13}],
     "subtitle": "Pillager cries"
   },
   "pillager.hurt.23": {
-    "sounds": [{"name": "illagerblabber:pillager/hurt/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/hurt/23", "attenuation_distance": 13}],
     "subtitle": "Pillager wails"
   },
 
   "pillager.spotted.01": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/01", "attenuation_distance": 13}],
     "subtitle": "Pillager alerts"
   },
   "pillager.spotted.02": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/02", "attenuation_distance": 13}],
     "subtitle": "Pillager notices"
   },
   "pillager.spotted.03": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/03", "attenuation_distance": 13}],
     "subtitle": "Pillager spots"
   },
   "pillager.spotted.04": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/04", "attenuation_distance": 13}],
     "subtitle": "Pillager finds"
   },
   "pillager.spotted.05": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/05", "attenuation_distance": 13}],
     "subtitle": "Pillager detects"
   },
   "pillager.spotted.06": {
-    "sounds": [{"name": "illagerblabber:pillager/spotted/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/spotted/06", "attenuation_distance": 13}],
     "subtitle": "Pillager alerts"
   },
 
   "pillager.victory.01": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/01", "attenuation_distance": 13}],
     "subtitle": "Pillager celebrates"
   },
   "pillager.victory.02": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/02", "attenuation_distance": 13}],
     "subtitle": "Pillager gloats"
   },
   "pillager.victory.03": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/03", "attenuation_distance": 13}],
     "subtitle": "Pillager triumphs"
   },
   "pillager.victory.04": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/04", "attenuation_distance": 13}],
     "subtitle": "Pillager boasts"
   },
   "pillager.victory.05": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/05", "attenuation_distance": 13}],
     "subtitle": "Pillager cheers"
   },
   "pillager.victory.06": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/06", "attenuation_distance": 13}],
     "subtitle": "Pillager celebrates"
   },
   "pillager.victory.07": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/07", "attenuation_distance": 13}],
     "subtitle": "Pillager gloats"
   },
   "pillager.victory.08": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/08", "attenuation_distance": 13}],
     "subtitle": "Pillager triumphs"
   },
   "pillager.victory.09": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/09", "attenuation_distance": 13}],
     "subtitle": "Pillager boasts"
   },
   "pillager.victory.10": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/10", "attenuation_distance": 13}],
     "subtitle": "Pillager cheers"
   },
   "pillager.victory.11": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/11", "attenuation_distance": 13}],
     "subtitle": "Pillager celebrates"
   },
   "pillager.victory.12": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/12", "attenuation_distance": 13}],
     "subtitle": "Pillager gloats"
   },
   "pillager.victory.13": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/13", "attenuation_distance": 13}],
     "subtitle": "Pillager triumphs"
   },
   "pillager.victory.14": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/14", "attenuation_distance": 13}],
     "subtitle": "Pillager boasts"
   },
   "pillager.victory.15": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/15", "attenuation_distance": 13}],
     "subtitle": "Pillager cheers"
   },
   "pillager.victory.16": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/16", "attenuation_distance": 13}],
     "subtitle": "Pillager celebrates"
   },
   "pillager.victory.17": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/17", "attenuation_distance": 13}],
     "subtitle": "Pillager gloats"
   },
   "pillager.victory.18": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/18", "attenuation_distance": 13}],
     "subtitle": "Pillager triumphs"
   },
   "pillager.victory.19": {
-    "sounds": [{"name": "illagerblabber:pillager/victory/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:pillager/victory/19", "attenuation_distance": 13}],
     "subtitle": "Pillager boasts"
   },
   "vindicator.ambient_noise.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator grumbles"
   },
   "vindicator.ambient_noise.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator huffs"
   },
   "vindicator.ambient_noise.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator growls"
   },
   "vindicator.ambient_noise.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator snarls"
   },
   "vindicator.ambient_noise.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator grunts"
   },
   "vindicator.ambient_noise.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator seethes"
   },
   "vindicator.ambient_noise.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator fumes"
   },
   "vindicator.ambient_noise.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator scoffs"
   },
   "vindicator.ambient_noise.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator hisses"
   },
   "vindicator.ambient_noise.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator sneers"
   },
   "vindicator.ambient_noise.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator gripes"
   },
   "vindicator.ambient_noise.12": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/12", "attenuation_distance": 13}],
     "subtitle": "Vindicator exhales"
   },
   "vindicator.ambient_noise.13": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/13", "attenuation_distance": 13}],
     "subtitle": "Vindicator scowls"
   },
   "vindicator.ambient_noise.14": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/14", "attenuation_distance": 13}],
     "subtitle": "Vindicator frowns"
   },
   "vindicator.ambient_noise.15": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/15", "attenuation_distance": 13}],
     "subtitle": "Vindicator sulks"
   },
   "vindicator.ambient_noise.16": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/16", "attenuation_distance": 13}],
     "subtitle": "Vindicator mutters"
   },
   "vindicator.ambient_noise.17": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/17", "attenuation_distance": 13}],
     "subtitle": "Vindicator broods"
   },
   "vindicator.ambient_noise.18": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/18", "attenuation_distance": 13}],
     "subtitle": "Vindicator grouses"
   },
   "vindicator.ambient_noise.19": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/19", "attenuation_distance": 13}],
     "subtitle": "Vindicator bristles"
   },
   "vindicator.ambient_noise.20": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/20", "attenuation_distance": 13}],
     "subtitle": "Vindicator rumbles"
   },
   "vindicator.ambient_noise.21": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/21", "attenuation_distance": 13}],
     "subtitle": "Vindicator glowers"
   },
   "vindicator.ambient_noise.22": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/22", "attenuation_distance": 13}],
     "subtitle": "Vindicator snorts"
   },
   "vindicator.ambient_noise.23": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/23", "attenuation_distance": 13}],
     "subtitle": "Vindicator steams"
   },
   "vindicator.ambient_noise.24": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/24", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/24", "attenuation_distance": 13}],
     "subtitle": "Vindicator blusters"
   },
   "vindicator.ambient_noise.25": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/25", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/25", "attenuation_distance": 13}],
     "subtitle": "Vindicator frets"
   },
   "vindicator.ambient_noise.26": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/26", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/26", "attenuation_distance": 13}],
     "subtitle": "Vindicator harrumphs"
   },
   "vindicator.ambient_noise.27": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/27", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/27", "attenuation_distance": 13}],
     "subtitle": "Vindicator heckles"
   },
   "vindicator.ambient_noise.28": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/28", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/28", "attenuation_distance": 13}],
     "subtitle": "Vindicator murmurs"
   },
   "vindicator.ambient_noise.29": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/29", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/29", "attenuation_distance": 13}],
     "subtitle": "Vindicator grizzles"
   },
   "vindicator.ambient_noise.30": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/30", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/30", "attenuation_distance": 13}],
     "subtitle": "Vindicator fumes"
   },
   "vindicator.ambient_noise.31": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/31", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_noise/31", "attenuation_distance": 13}],
     "subtitle": "Vindicator rasps"
   },
 
   "vindicator.ambient_talk.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator rants"
   },
   "vindicator.ambient_talk.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator complains"
   },
   "vindicator.ambient_talk.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator vents"
   },
   "vindicator.ambient_talk.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator grouses"
   },
   "vindicator.ambient_talk.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator snarls"
   },
   "vindicator.ambient_talk.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator disputes"
   },
   "vindicator.ambient_talk.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator argues"
   },
   "vindicator.ambient_talk.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator scolds"
   },
   "vindicator.ambient_talk.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator criticizes"
   },
   "vindicator.ambient_talk.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator lectures"
   },
   "vindicator.ambient_talk.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator rebukes"
   },
   "vindicator.ambient_talk.12": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/12", "attenuation_distance": 13}],
     "subtitle": "Vindicator chides"
   },
   "vindicator.ambient_talk.13": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/13", "attenuation_distance": 13}],
     "subtitle": "Vindicator admonishes"
   },
   "vindicator.ambient_talk.14": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/14", "attenuation_distance": 13}],
     "subtitle": "Vindicator castigates"
   },
   "vindicator.ambient_talk.15": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/15", "attenuation_distance": 13}],
     "subtitle": "Vindicator rebukes"
   },
   "vindicator.ambient_talk.16": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/16", "attenuation_distance": 13}],
     "subtitle": "Vindicator grumbles"
   },
   "vindicator.ambient_talk.17": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/17", "attenuation_distance": 13}],
     "subtitle": "Vindicator censures"
   },
   "vindicator.ambient_talk.18": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/18", "attenuation_distance": 13}],
     "subtitle": "Vindicator berates"
   },
   "vindicator.ambient_talk.19": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/19", "attenuation_distance": 13}],
     "subtitle": "Vindicator upbraids"
   },
   "vindicator.ambient_talk.20": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/20", "attenuation_distance": 13}],
     "subtitle": "Vindicator denounces"
   },
   "vindicator.ambient_talk.21": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/21", "attenuation_distance": 13}],
     "subtitle": "Vindicator reproaches"
   },
   "vindicator.ambient_talk.22": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/22", "attenuation_distance": 13}],
     "subtitle": "Vindicator reprimands"
   },
   "vindicator.ambient_talk.23": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/23", "attenuation_distance": 13}],
     "subtitle": "Vindicator remonstrates"
   },
   "vindicator.ambient_talk.24": {
-    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/24", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/ambient_talk/24", "attenuation_distance": 13}],
     "subtitle": "Vindicator protests"
   },
 
   "vindicator.battle.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator rages"
   },
   "vindicator.battle.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator attacks"
   },
   "vindicator.battle.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator charges"
   },
   "vindicator.battle.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator rampages"
   },
   "vindicator.battle.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator assaults"
   },
   "vindicator.battle.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator strikes"
   },
   "vindicator.battle.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator fights"
   },
   "vindicator.battle.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator threatens"
   },
   "vindicator.battle.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator confronts"
   },
   "vindicator.battle.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator challenges"
   },
   "vindicator.battle.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator aggresses"
   },
   "vindicator.battle.12": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/12", "attenuation_distance": 13}],
     "subtitle": "Vindicator battles"
   },
   "vindicator.battle.13": {
-    "sounds": [{"name": "illagerblabber:vindicator/battle/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/battle/13", "attenuation_distance": 13}],
     "subtitle": "Vindicator clashes"
   },
 
   "vindicator.hurt.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator hurts"
   },
   "vindicator.hurt.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator pains"
   },
   "vindicator.hurt.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator aches"
   },
   "vindicator.hurt.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator suffers"
   },
   "vindicator.hurt.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator stings"
   },
   "vindicator.hurt.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator winces"
   },
   "vindicator.hurt.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator yelps"
   },
   "vindicator.hurt.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator squeals"
   },
   "vindicator.hurt.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator cries"
   },
   "vindicator.hurt.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator groans"
   },
   "vindicator.hurt.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator moans"
   },
   "vindicator.hurt.12": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/12", "attenuation_distance": 13}],
     "subtitle": "Vindicator wails"
   },
   "vindicator.hurt.13": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/13", "attenuation_distance": 13}],
     "subtitle": "Vindicator bleeds"
   },
   "vindicator.hurt.14": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/14", "attenuation_distance": 13}],
     "subtitle": "Vindicator gashes"
   },
   "vindicator.hurt.15": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/15", "attenuation_distance": 13}],
     "subtitle": "Vindicator endures"
   },
   "vindicator.hurt.16": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/16", "attenuation_distance": 13}],
     "subtitle": "Vindicator withstands"
   },
   "vindicator.hurt.17": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/17", "attenuation_distance": 13}],
     "subtitle": "Vindicator tolerates"
   },
   "vindicator.hurt.18": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/18", "attenuation_distance": 13}],
     "subtitle": "Vindicator resists"
   },
   "vindicator.hurt.19": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/19", "attenuation_distance": 13}],
     "subtitle": "Vindicator howls"
   },
   "vindicator.hurt.20": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/20", "attenuation_distance": 13}],
     "subtitle": "Vindicator roars"
   },
   "vindicator.hurt.21": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/21", "attenuation_distance": 13}],
     "subtitle": "Vindicator bellows"
   },
   "vindicator.hurt.22": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/22", "attenuation_distance": 13}],
     "subtitle": "Vindicator screams"
   },
   "vindicator.hurt.23": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/23", "attenuation_distance": 13}],
     "subtitle": "Vindicator shrieks"
   },
   "vindicator.hurt.24": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/24", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/24", "attenuation_distance": 13}],
     "subtitle": "Vindicator screeches"
   },
   "vindicator.hurt.25": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/25", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/25", "attenuation_distance": 13}],
     "subtitle": "Vindicator hollers"
   },
   "vindicator.hurt.26": {
-    "sounds": [{"name": "illagerblabber:vindicator/hurt/26", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/hurt/26", "attenuation_distance": 13}],
     "subtitle": "Vindicator yowls"
   },
 
   "vindicator.spotted.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator alerts"
   },
   "vindicator.spotted.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator notices"
   },
   "vindicator.spotted.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator warns"
   },
   "vindicator.spotted.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator spots"
   },
   "vindicator.spotted.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator detects"
   },
   "vindicator.spotted.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator perceives"
   },
   "vindicator.spotted.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator discovers"
   },
   "vindicator.spotted.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator identifies"
   },
   "vindicator.spotted.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator locates"
   },
   "vindicator.spotted.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator searches"
   },
   "vindicator.spotted.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/spotted/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/spotted/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator finds"
   },
 
   "vindicator.victory.01": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/01", "attenuation_distance": 13}],
     "subtitle": "Vindicator triumphs"
   },
   "vindicator.victory.02": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/02", "attenuation_distance": 13}],
     "subtitle": "Vindicator conquers"
   },
   "vindicator.victory.03": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/03", "attenuation_distance": 13}],
     "subtitle": "Vindicator prevails"
   },
   "vindicator.victory.04": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/04", "attenuation_distance": 13}],
     "subtitle": "Vindicator succeeds"
   },
   "vindicator.victory.05": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/05", "attenuation_distance": 13}],
     "subtitle": "Vindicator defeats"
   },
   "vindicator.victory.06": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/06", "attenuation_distance": 13}],
     "subtitle": "Vindicator overcomes"
   },
   "vindicator.victory.07": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/07", "attenuation_distance": 13}],
     "subtitle": "Vindicator subjugates"
   },
   "vindicator.victory.08": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/08", "attenuation_distance": 13}],
     "subtitle": "Vindicator dominates"
   },
   "vindicator.victory.09": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/09", "attenuation_distance": 13}],
     "subtitle": "Vindicator celebrates"
   },
   "vindicator.victory.10": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/10", "attenuation_distance": 13}],
     "subtitle": "Vindicator gloats"
   },
   "vindicator.victory.11": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/11", "attenuation_distance": 13}],
     "subtitle": "Vindicator brags"
   },
   "vindicator.victory.12": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/12", "attenuation_distance": 13}],
     "subtitle": "Vindicator boasts"
   },
   "vindicator.victory.13": {
-    "sounds": [{"name": "illagerblabber:vindicator/victory/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:vindicator/victory/13", "attenuation_distance": 13}],
     "subtitle": "Vindicator exults"
   },
 
   "evoker.silence.01": {
-    "sounds": [{"name": "illagerblabber:evoker/silence/01", "attenuation_distance": 16}]
+    "sounds": [{"name": "illagerblabber:evoker/silence/01", "attenuation_distance": 13}]
   },
 
   "evoker.ambient_noise.01": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/01", "attenuation_distance": 13}],
     "subtitle": "Evoker mutters"
   },
   "evoker.ambient_noise.02": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/02", "attenuation_distance": 13}],
     "subtitle": "Evoker mutters"
   },
   "evoker.ambient_noise.03": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/03", "attenuation_distance": 13}],
     "subtitle": "Evoker mutters"
   },
   "evoker.ambient_noise.04": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/04", "attenuation_distance": 13}],
     "subtitle": "Evoker grumbles"
   },
   "evoker.ambient_noise.05": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/05", "attenuation_distance": 13}],
     "subtitle": "Evoker grumbles"
   },
   "evoker.ambient_noise.06": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/06", "attenuation_distance": 13}],
     "subtitle": "Evoker grumbles"
   },
   "evoker.ambient_noise.07": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/07", "attenuation_distance": 13}],
     "subtitle": "Evoker huffs"
   },
   "evoker.ambient_noise.08": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/08", "attenuation_distance": 13}],
     "subtitle": "Evoker huffs"
   },
   "evoker.ambient_noise.09": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/09", "attenuation_distance": 13}],
     "subtitle": "Evoker huffs"
   },
   "evoker.ambient_noise.10": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/10", "attenuation_distance": 13}],
     "subtitle": "Evoker breathes"
   },
   "evoker.ambient_noise.11": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/11", "attenuation_distance": 13}],
     "subtitle": "Evoker breathes"
   },
   "evoker.ambient_noise.12": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/12", "attenuation_distance": 13}],
     "subtitle": "Evoker breathes"
   },
   "evoker.ambient_noise.13": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/13", "attenuation_distance": 13}],
     "subtitle": "Evoker snickers"
   },
   "evoker.ambient_noise.14": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_noise/14", "attenuation_distance": 13}],
     "subtitle": "Evoker snickers"
   },
 
   "evoker.ambient_talk.01": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/01", "attenuation_distance": 13}],
     "subtitle": "Evoker schemes"
   },
   "evoker.ambient_talk.02": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/02", "attenuation_distance": 13}],
     "subtitle": "Evoker schemes"
   },
   "evoker.ambient_talk.03": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/03", "attenuation_distance": 13}],
     "subtitle": "Evoker schemes"
   },
   "evoker.ambient_talk.04": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/04", "attenuation_distance": 13}],
     "subtitle": "Evoker chatters"
   },
   "evoker.ambient_talk.05": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/05", "attenuation_distance": 13}],
     "subtitle": "Evoker chatters"
   },
   "evoker.ambient_talk.06": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/06", "attenuation_distance": 13}],
     "subtitle": "Evoker chatters"
   },
   "evoker.ambient_talk.07": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/07", "attenuation_distance": 13}],
     "subtitle": "Evoker rambles"
   },
   "evoker.ambient_talk.08": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/08", "attenuation_distance": 13}],
     "subtitle": "Evoker rambles"
   },
   "evoker.ambient_talk.09": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/09", "attenuation_distance": 13}],
     "subtitle": "Evoker rambles"
   },
   "evoker.ambient_talk.10": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/10", "attenuation_distance": 13}],
     "subtitle": "Evoker whispers"
   },
   "evoker.ambient_talk.11": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/11", "attenuation_distance": 13}],
     "subtitle": "Evoker whispers"
   },
   "evoker.ambient_talk.12": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/12", "attenuation_distance": 13}],
     "subtitle": "Evoker whispers"
   },
   "evoker.ambient_talk.13": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/13", "attenuation_distance": 13}],
     "subtitle": "Evoker plots"
   },
   "evoker.ambient_talk.14": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/14", "attenuation_distance": 13}],
     "subtitle": "Evoker plots"
   },
   "evoker.ambient_talk.15": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/15", "attenuation_distance": 13}],
     "subtitle": "Evoker plots"
   },
   "evoker.ambient_talk.16": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/16", "attenuation_distance": 13}],
     "subtitle": "Evoker babbles"
   },
   "evoker.ambient_talk.17": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/17", "attenuation_distance": 13}],
     "subtitle": "Evoker babbles"
   },
   "evoker.ambient_talk.18": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/18", "attenuation_distance": 13}],
     "subtitle": "Evoker babbles"
   },
   "evoker.ambient_talk.19": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/19", "attenuation_distance": 13}],
     "subtitle": "Evoker mutters"
   },
   "evoker.ambient_talk.20": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/20", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/20", "attenuation_distance": 13}],
     "subtitle": "Evoker mutters"
   },
   "evoker.ambient_talk.21": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/21", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/21", "attenuation_distance": 13}],
     "subtitle": "Evoker grumbles"
   },
   "evoker.ambient_talk.22": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/22", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/22", "attenuation_distance": 13}],
     "subtitle": "Evoker grumbles"
   },
   "evoker.ambient_talk.23": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/23", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/23", "attenuation_distance": 13}],
     "subtitle": "Evoker monologues"
   },
   "evoker.ambient_talk.24": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/24", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/24", "attenuation_distance": 13}],
     "subtitle": "Evoker monologues"
   },
   "evoker.ambient_talk.25": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/25", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/25", "attenuation_distance": 13}],
     "subtitle": "Evoker monologues"
   },
   "evoker.ambient_talk.26": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/26", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/26", "attenuation_distance": 13}],
     "subtitle": "Evoker gibbers"
   },
   "evoker.ambient_talk.27": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/27", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/27", "attenuation_distance": 13}],
     "subtitle": "Evoker gibbers"
   },
   "evoker.ambient_talk.28": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/28", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/28", "attenuation_distance": 13}],
     "subtitle": "Evoker gibbers"
   },
   "evoker.ambient_talk.29": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/29", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/29", "attenuation_distance": 13}],
     "subtitle": "Evoker cackles"
   },
   "evoker.ambient_talk.30": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/30", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/30", "attenuation_distance": 13}],
     "subtitle": "Evoker cackles"
   },
   "evoker.ambient_talk.31": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/31", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/31", "attenuation_distance": 13}],
     "subtitle": "Evoker cackles"
   },
   "evoker.ambient_talk.32": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/32", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/32", "attenuation_distance": 13}],
     "subtitle": "Evoker mumbles"
   },
   "evoker.ambient_talk.33": {
-    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/33", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/ambient_talk/33", "attenuation_distance": 13}],
     "subtitle": "Evoker mumbles"
   },
 
   "evoker.battle.01": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/01", "attenuation_distance": 13}],
     "subtitle": "Evoker threatens"
   },
   "evoker.battle.02": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/02", "attenuation_distance": 13}],
     "subtitle": "Evoker threatens"
   },
   "evoker.battle.03": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/03", "attenuation_distance": 13}],
     "subtitle": "Evoker threatens"
   },
   "evoker.battle.04": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/04", "attenuation_distance": 13}],
     "subtitle": "Evoker rages"
   },
   "evoker.battle.05": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/05", "attenuation_distance": 13}],
     "subtitle": "Evoker rages"
   },
   "evoker.battle.06": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/06", "attenuation_distance": 13}],
     "subtitle": "Evoker rages"
   },
   "evoker.battle.07": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/07", "attenuation_distance": 13}],
     "subtitle": "Evoker curses"
   },
   "evoker.battle.08": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/08", "attenuation_distance": 13}],
     "subtitle": "Evoker curses"
   },
   "evoker.battle.09": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/09", "attenuation_distance": 13}],
     "subtitle": "Evoker curses"
   },
   "evoker.battle.10": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/10", "attenuation_distance": 13}],
     "subtitle": "Evoker challenges"
   },
   "evoker.battle.11": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/11", "attenuation_distance": 13}],
     "subtitle": "Evoker challenges"
   },
   "evoker.battle.12": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/12", "attenuation_distance": 13}],
     "subtitle": "Evoker challenges"
   },
   "evoker.battle.13": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/13", "attenuation_distance": 13}],
     "subtitle": "Evoker taunts"
   },
   "evoker.battle.14": {
-    "sounds": [{"name": "illagerblabber:evoker/battle/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/battle/14", "attenuation_distance": 13}],
     "subtitle": "Evoker taunts"
   },
 
   "evoker.hurt.01": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/01", "attenuation_distance": 13}],
     "subtitle": "Evoker pained"
   },
   "evoker.hurt.02": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/02", "attenuation_distance": 13}],
     "subtitle": "Evoker pained"
   },
   "evoker.hurt.03": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/03", "attenuation_distance": 13}],
     "subtitle": "Evoker pained"
   },
   "evoker.hurt.04": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/04", "attenuation_distance": 13}],
     "subtitle": "Evoker yelps"
   },
   "evoker.hurt.05": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/05", "attenuation_distance": 13}],
     "subtitle": "Evoker yelps"
   },
   "evoker.hurt.06": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/06", "attenuation_distance": 13}],
     "subtitle": "Evoker yelps"
   },
   "evoker.hurt.07": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/07", "attenuation_distance": 13}],
     "subtitle": "Evoker suffers"
   },
   "evoker.hurt.08": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/08", "attenuation_distance": 13}],
     "subtitle": "Evoker suffers"
   },
   "evoker.hurt.09": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/09", "attenuation_distance": 13}],
     "subtitle": "Evoker suffers"
   },
   "evoker.hurt.10": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/10", "attenuation_distance": 13}],
     "subtitle": "Evoker winces"
   },
   "evoker.hurt.11": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/11", "attenuation_distance": 13}],
     "subtitle": "Evoker winces"
   },
   "evoker.hurt.12": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/12", "attenuation_distance": 13}],
     "subtitle": "Evoker winces"
   },
   "evoker.hurt.13": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/13", "attenuation_distance": 13}],
     "subtitle": "Evoker yowls"
   },
   "evoker.hurt.14": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/14", "attenuation_distance": 13}],
     "subtitle": "Evoker yowls"
   },
   "evoker.hurt.15": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/15", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/15", "attenuation_distance": 13}],
     "subtitle": "Evoker yowls"
   },
   "evoker.hurt.16": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/16", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/16", "attenuation_distance": 13}],
     "subtitle": "Evoker hurts"
   },
   "evoker.hurt.17": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/17", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/17", "attenuation_distance": 13}],
     "subtitle": "Evoker hurts"
   },
   "evoker.hurt.18": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/18", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/18", "attenuation_distance": 13}],
     "subtitle": "Evoker hurts"
   },
   "evoker.hurt.19": {
-    "sounds": [{"name": "illagerblabber:evoker/hurt/19", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/hurt/19", "attenuation_distance": 13}],
     "subtitle": "Evoker hurts"
   },
 
   "evoker.spotted.01": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/01", "attenuation_distance": 13}],
     "subtitle": "Evoker notices"
   },
   "evoker.spotted.02": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/02", "attenuation_distance": 13}],
     "subtitle": "Evoker notices"
   },
   "evoker.spotted.03": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/03", "attenuation_distance": 13}],
     "subtitle": "Evoker notices"
   },
   "evoker.spotted.04": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/04", "attenuation_distance": 13}],
     "subtitle": "Evoker alerts"
   },
   "evoker.spotted.05": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/05", "attenuation_distance": 13}],
     "subtitle": "Evoker alerts"
   },
   "evoker.spotted.06": {
-    "sounds": [{"name": "illagerblabber:evoker/spotted/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/spotted/06", "attenuation_distance": 13}],
     "subtitle": "Evoker alerts"
   },
 
   "evoker.victory.01": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/01", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/01", "attenuation_distance": 13}],
     "subtitle": "Evoker gloats"
   },
   "evoker.victory.02": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/02", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/02", "attenuation_distance": 13}],
     "subtitle": "Evoker gloats"
   },
   "evoker.victory.03": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/03", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/03", "attenuation_distance": 13}],
     "subtitle": "Evoker gloats"
   },
   "evoker.victory.04": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/04", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/04", "attenuation_distance": 13}],
     "subtitle": "Evoker celebrates"
   },
   "evoker.victory.05": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/05", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/05", "attenuation_distance": 13}],
     "subtitle": "Evoker celebrates"
   },
   "evoker.victory.06": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/06", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/06", "attenuation_distance": 13}],
     "subtitle": "Evoker celebrates"
   },
   "evoker.victory.07": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/07", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/07", "attenuation_distance": 13}],
     "subtitle": "Evoker triumphs"
   },
   "evoker.victory.08": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/08", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/08", "attenuation_distance": 13}],
     "subtitle": "Evoker triumphs"
   },
   "evoker.victory.09": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/09", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/09", "attenuation_distance": 13}],
     "subtitle": "Evoker triumphs"
   },
   "evoker.victory.10": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/10", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/10", "attenuation_distance": 13}],
     "subtitle": "Evoker mocks"
   },
   "evoker.victory.11": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/11", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/11", "attenuation_distance": 13}],
     "subtitle": "Evoker mocks"
   },
   "evoker.victory.12": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/12", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/12", "attenuation_distance": 13}],
     "subtitle": "Evoker mocks"
   },
   "evoker.victory.13": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/13", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/13", "attenuation_distance": 13}],
     "subtitle": "Evoker boasts"
   },
   "evoker.victory.14": {
-    "sounds": [{"name": "illagerblabber:evoker/victory/14", "attenuation_distance": 16}],
+    "sounds": [{"name": "illagerblabber:evoker/victory/14", "attenuation_distance": 13}],
     "subtitle": "Evoker boasts"
   }
 }

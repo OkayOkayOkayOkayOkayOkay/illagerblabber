@@ -20,7 +20,7 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 ##  🗣️ Features That Actually Required Brain Cells to make 🗣️
 
 ### Advanced Audio System
-- Each illager type has unique voice lines (Pillagers sound crude, Vindicators sound ANGRY, Evokers sound snobby)
+Each illager has their own vocal personality - Pillagers sound like retail workers on their fifth straight closing shift, Vindicators sound like they're perpetually stepping on Legos, and Evokers speak like they're judging your Minecraft build while sipping expensive tea.
 - Context-aware dialogue system (different lines when):
   - Passive
   - Spotting a player or any target for the first time
@@ -46,7 +46,7 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 - More illager types (looking at you, Illusioner)
 - Full mod compatibility with popular illager-adding mods
 - Therapy for players traumatized by pillager voices
-- **Villagerblabber!** 🗣️
+- **VillagerBlabber!** 🗣️
 
 
 
