@@ -15,6 +15,7 @@ Now when a pillager is about to murder you, he'll let you know with a charming o
 
 Ever wondered what Vindicators say before chopping you in half? No? **WELL NOW YOU'LL KNOW ANYWAY.**
 
+### Currently more than 300 voice lines!
 All the voice lines are vanilla friendly, essentially mimicking their Vanilla voices!!
 
 ##  🗣️ Features That Actually Required Brain Cells to make 🗣️
@@ -46,9 +47,9 @@ Each illager has their own vocal personality - Pillagers sound like retail worke
 ## Future Plans
 
 - More illager types (looking at you, Illusioner)
-- Full mod compatibility with popular illager-adding mods
-- Therapy for players traumatized by pillager voices
-- **Villagerblabber!** 🗣️
+- Doubling the Voice lines!!
+- Therapy for players traumatized by illager voices
+- **VillagerBlabber!** 🗣️
 
 
 
