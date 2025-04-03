@@ -14,6 +14,9 @@ import java.util.concurrent.ConcurrentHashMap
 object IllagerVoiceRegistry {
     private val LOGGER = LoggerFactory.getLogger("illagerblabber")
 
+    // Group Spotted Spam Prevention
+    private val lastGroupSpottedSoundTime = ConcurrentHashMap<IllagerType, Long>()
+
     // Maps to store state data
     private val voiceManagers = ConcurrentHashMap<UUID, IllagerVoiceManager>()
     private val hadTargetLastTick = ConcurrentHashMap<UUID, Boolean>()
@@ -23,10 +26,20 @@ object IllagerVoiceRegistry {
     private var currentGameTick: Long = 0
 
     private val safeRandom = java.util.Random()
-    private val lastPillagerTargets = ConcurrentHashMap<UUID, UUID?>()
-    // Special tracking for Vindicators
-    private val lastVindicatorTargets = ConcurrentHashMap<UUID, UUID?>()
 
+    // Special target tracking for Illagers (Victory state)
+    private val lastPillagerTargets = ConcurrentHashMap<UUID, UUID?>()
+    private val lastVindicatorTargets = ConcurrentHashMap<UUID, UUID?>()
+    private val lastEvokerTargets = ConcurrentHashMap<UUID, UUID?>()
+
+    // Add these methods to IllagerVoiceRegistry
+    fun getLastGroupSpottedTime(type: IllagerType): Long {
+        return lastGroupSpottedSoundTime.getOrDefault(type, 0L)
+    }
+
+    fun setLastGroupSpottedTime(type: IllagerType, time: Long) {
+        lastGroupSpottedSoundTime[type] = time
+    }
     /**
      * Gets or creates a voice manager for an illager
      */
@@ -60,6 +73,7 @@ object IllagerVoiceRegistry {
         val voiceManager = voiceManagers[id] ?: return
         voiceManager.setState(IllagerState.Hurt)
     }
+
 
     /**
      * Sets an illager entity to the victory state
@@ -127,7 +141,7 @@ object IllagerVoiceRegistry {
 
         val hasTarget = illager.target != null && illager.target!!.isAlive
 
-        // Special handling for Vindicators
+        // Ensuring Illager do Victory State
         if (illagerType == IllagerType.VINDICATOR) {
             // Debug logging
             // LOGGER.info("Vindicator state update - hasTarget: $hasTarget, hadTarget: $hadTarget, debounce: $combatDebounceTimer")
@@ -177,6 +191,29 @@ object IllagerVoiceRegistry {
                 LOGGER.info("PILLAGER LOST TARGET - Combat debounce: $combatDebounceTimer")
             }
         }
+        if (illagerType == IllagerType.EVOKER) {
+            val evokerId = illager.uuid
+
+            if (hasTarget) {
+                // Store current target ID
+                lastEvokerTargets.getOrPut(evokerId) { illager.target!!.uuid }
+            } else if (hadTarget && lastEvokerTargets.containsKey(evokerId)) {
+                // Target is gone - force a short victory state
+                LOGGER.info("FORCING EVOKER VICTORY!")
+                voiceManager.setState(IllagerState.Victory)
+                victoryTimers[id] = 60 // 3 second victory period
+                hadTargetLastTick[id] = false
+                lastEvokerTargets.remove(evokerId)
+                return // Skip the rest of the processing
+            }
+
+            // Additional logging
+            if (!hasTarget && hadTarget) {
+                LOGGER.info("EVOKER LOST TARGET - Combat debounce: $combatDebounceTimer")
+            }
+        }
+
+
         if (hasTarget) {
             // We have a valid target
             if (!hadTarget) {

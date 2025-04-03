@@ -391,6 +391,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         LOGGER.info("VOICE MANAGER CREATED FOR $typeName AT ${illager.x}, ${illager.y}, ${illager.z}")
     }
 
+    private var postVictoryCooldown: Int = 0
 
     // Updated method with illagerType parameter
     private fun adjustCooldownBasedOnCrowding(entity: LivingEntity, state: IllagerState, baseCooldown: Int): Int {
@@ -843,11 +844,18 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
                 // Apply crowd adjustment
                 soundCooldown = adjustCooldownBasedOnCrowding(illager, currentState, baseCooldown)
 
+                if (currentState is IllagerState.Victory) {
+                    postVictoryCooldown = 100  // 5 seconds of cooldown after victory
+                    LOGGER.info("${illagerType.name} VICTORY COMPLETE - Setting post-victory cooldown")
+                }
+
                 // If we just finished a hurt sound, set post-hurt cooldown
                 if (currentState is IllagerState.Hurt) {
                     //Logger.info("SETTING POST-HURT COOLDOWN")
                     postHurtCooldown = 60  // 3 seconds
                 }
+
+
             }
         }
 
@@ -860,6 +868,15 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
             postHurtCooldown--
             // Skip all sound playing during post-hurt cooldown
             return
+        }
+
+        if (postVictoryCooldown > 0) {
+            postVictoryCooldown--
+
+            // During victory cooldown, only allow hurt sounds
+            if (currentState !is IllagerState.Hurt) {
+                return // Skip sound playing for non-hurt states
+            }
         }
 
         // Check if we should play a high priority sound
@@ -895,21 +912,15 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         }
     }
 
-    // Determine if the current state should interrupt what's playing
+    // Replace the problematic method with this:
     private fun shouldInterruptCurrentSound(state: IllagerState): Boolean {
         if (!isSpeaking) return false // Nothing to interrupt
 
         // Special handling for hurt sounds
         if (state is IllagerState.Hurt) {
-            // If another hurt sound is already playing, only allow interruption
-            // if the current sound is NOT a short hurt sound
+            // NEVER interrupt another hurt sound that's already playing
             if (currentSoundType is IllagerState.Hurt) {
-                // Only let very short hurt sounds (< 1 sec) interrupt other hurt sounds
-                val soundToPlay = chooseHurtSound()
-                val duration = soundDurations[soundToPlay] ?: 20
-
-                // If this is a short hurt sound (< 1 sec), allow it to play
-                return duration < 20 // 20 ticks = 1 second
+                return false
             }
 
             // Hurt can interrupt any non-hurt sound
@@ -925,18 +936,30 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         return false
     }
 
+
+    // In IllagerVoiceManager class (not companion)
     fun setState(state: IllagerState) {
-        // Don't log if state hasn't changed
-        // if (state::class.java != currentState::class.java) {
-            //Logger.info("STATE CHANGED TO: $state (previous was $currentState)")
-        // }
+        // For spotted sounds, check group cooldown (except for vindicators)
+        if (state is IllagerState.Spotted &&
+            (illagerType == IllagerType.PILLAGER || illagerType == IllagerType.EVOKER)) {
 
-        // Update state
+            val currentTime = System.currentTimeMillis()
+            val lastTime = IllagerVoiceRegistry.getLastGroupSpottedTime(illagerType)
+
+            if (currentTime - lastTime < 3000) { // 3 seconds in ms
+                // Someone else already played the spotted sound recently
+                currentState = IllagerState.Combat // Go straight to combat instead
+                return
+            }
+
+            // We're the first to spot something - register it
+            IllagerVoiceRegistry.setLastGroupSpottedTime(illagerType, currentTime)
+        }
+
+        // Set the state as normal
         currentState = state
-
-        // Note: We handle interruption in the update method now
-        // This is cleaner as we check if we should play immediately first
     }
+
 
     private fun playAppropriateSound() {
         //LOGGER.info("Selecting sound for state: $currentState")

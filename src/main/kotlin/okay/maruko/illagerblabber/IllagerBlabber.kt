@@ -8,10 +8,11 @@ object IllagerBlabber : ModInitializer {
 	private val logger = LoggerFactory.getLogger("illagerblabber")
 
 	override fun onInitialize() {
-		logger.info("Get ready for some Illagerblabbering..")
-
+		// Initialize config
 		// Simply accessing the IllagerSounds object will register all sounds
 		// due to Kotlin's object initialization
 		IllagerSounds.registerAll()
+
+		logger.info("Get ready for some Illagerblabbering..")
 	}
 }
