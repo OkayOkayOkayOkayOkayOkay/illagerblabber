@@ -3,8 +3,6 @@
 > Because what Minecraft REALLY needed was more yapping illagers! 
 
 [![Fabric API](https://img.shields.io/badge/Fabric%20API-Required-brightgreen)](https://fabricmc.net/)
-[![Java](https://img.shields.io/badge/Java-17-orange)](https://adoptium.net/)
-[![License](https://img.shields.io/github/license/OkayOkayOkayOkayOkayOkay/illagerblabber)](LICENSE)
 
 <p align="center">
   <img src="src/main/resources/assets/illagerblabber/illagerblabbertitle2.png">
