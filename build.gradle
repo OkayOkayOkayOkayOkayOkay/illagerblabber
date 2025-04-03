@@ -25,7 +25,14 @@ def loaderVersion = versionData[2]
 def fabricVersion = versionData[3]
 def kotlinVersion = versionData[4]
 
-
+loom {
+	runs {
+		client {
+			// This is the correct syntax for newer Loom
+			vmArgs("-Djdk.attach.allowAttachSelf=true")
+		}
+	}
+}
 
 // Update project properties
 ext {
@@ -94,6 +101,10 @@ java {
 
 	sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
+
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(Integer.parseInt(targetCompatibility.getMajorVersion()))
+	}
 }
 
 

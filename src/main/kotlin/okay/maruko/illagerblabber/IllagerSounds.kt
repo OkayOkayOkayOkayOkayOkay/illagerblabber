@@ -361,7 +361,7 @@ object IllagerSounds {
 
 
     private fun registerSound(name: String): SoundEvent {
-        val id = Identifier("illagerblabber", name)
+        val id = Identifier.of("illagerblabber", name)
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id))
     }
 
