@@ -12,7 +12,7 @@ def mcVersionProps = new Properties()
 mcVersionsFile.withInputStream { mcVersionProps.load(it) }
 
 // Get target version (default to current if not specified)
-def targetMcVersion = project.findProperty("mcVersion") ?: "1.21.1"
+def targetMcVersion = project.findProperty("mcVersion") ?: "1.20.1"
 def versionData = mcVersionProps.getProperty("version.$targetMcVersion")?.split(",")
 if (versionData == null) {
 	throw new GradleException("Unknown Minecraft version: $targetMcVersion")
@@ -24,6 +24,8 @@ def yarnVersion = versionData[1]
 def loaderVersion = versionData[2]
 def fabricVersion = versionData[3]
 def kotlinVersion = versionData[4]
+
+
 
 // Update project properties
 ext {
@@ -38,7 +40,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-	archivesName = project.archives_base_name
+	archivesName = "${archives_base_name}-mc${mcVersion}"
 }
 
 repositories {
@@ -94,6 +96,7 @@ java {
 	targetCompatibility = JavaVersion.VERSION_17
 }
 
+
 jar {
 	inputs.property "archivesName", project.base.archivesName
 
@@ -101,6 +104,7 @@ jar {
 		rename { "${it}_${inputs.properties.archivesName}"}
 	}
 }
+
 
 // configure the maven publication
 publishing {
