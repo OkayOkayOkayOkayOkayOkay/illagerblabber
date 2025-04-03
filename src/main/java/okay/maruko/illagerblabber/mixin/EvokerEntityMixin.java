@@ -7,7 +7,6 @@ import net.minecraft.entity.mob.SpellcastingIllagerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.world.World;
 import okay.maruko.illagerblabber.IllagerSounds;
-import okay.maruko.illagerblabber.voice.IllagerState;
 import okay.maruko.illagerblabber.voice.IllagerType;
 import okay.maruko.illagerblabber.voice.IllagerVoiceRegistry;
 import org.slf4j.Logger;
@@ -38,7 +37,7 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
 
     @Inject(method = "getCelebratingSound", at = @At("HEAD"), cancellable = true)
     private void onGetCelebratingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        LOGGER.info("EVOKER RAID VICTORY DETECTED!");
+        //LOGGER.info("EVOKER RAID VICTORY DETECTED!");
         EvokerEntity evoker = (EvokerEntity)(Object)this;
         IllagerVoiceRegistry.INSTANCE.setVictoryState(evoker);
 

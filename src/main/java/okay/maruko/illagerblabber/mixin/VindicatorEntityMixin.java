@@ -46,7 +46,7 @@ public abstract class VindicatorEntityMixin extends IllagerEntity {
 
     @Inject(method = "getCelebratingSound", at = @At("HEAD"), cancellable = true)
     private void onGetCelebratingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        LOGGER.info("VINDICATOR RAID VICTORY DETECTED!");
+        //LOGGER.info("VINDICATOR RAID VICTORY DETECTED!");
         VindicatorEntity vindicator = (VindicatorEntity)(Object)this;
         IllagerVoiceRegistry.setVictoryState(vindicator);
 
