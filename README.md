@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/OkayOkayOkayOkayOkayOkay/illagerblabber)](LICENSE)
 
 <p align="center">
-  <img src="src/main/resources/assets/illagerblabber/icon.png" width="200">
+  <img src="src/main/resources/assets/illagerblabber/illagerblabbertitle2.png">
 </p>
 
 ## What is this monstrosity?
@@ -49,6 +49,9 @@ All the voice lines are vanilla friendly, essentially mimicking their Vanilla vo
 - Full mod compatibility with popular illager-adding mods
 - Therapy for players traumatized by pillager voices
 - **Villagerblabber!** 🗣️
+
+
+
 
 ---
 
