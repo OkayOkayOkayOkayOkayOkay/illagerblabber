@@ -366,7 +366,7 @@ object IllagerSounds {
     }
 
     fun registerAll() {
-        // This method intentionally left empty
+        // method intentionally left empty
     }
 
 }

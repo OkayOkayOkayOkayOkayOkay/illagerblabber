@@ -34,7 +34,7 @@ public abstract class PillagerEntityMixin extends IllagerEntity {
         PillagerEntity pillager = (PillagerEntity)(Object)this;
         IllagerVoiceRegistry.setHurtState(pillager);
 
-        // Cancel vanilla sound
+
         cir.setReturnValue(null);
     }
 
@@ -44,7 +44,7 @@ public abstract class PillagerEntityMixin extends IllagerEntity {
         PillagerEntity pillager = (PillagerEntity)(Object)this;
         IllagerVoiceRegistry.setVictoryState(pillager);
 
-        // Return our silent sound
+        // Return silent sound
         cir.setReturnValue(IllagerSounds.INSTANCE.getSILENCE());
     }
 

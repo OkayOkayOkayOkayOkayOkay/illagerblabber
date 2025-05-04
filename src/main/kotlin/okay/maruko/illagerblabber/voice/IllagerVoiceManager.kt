@@ -400,7 +400,6 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
             return baseCooldown
         }
 
-        // Get all illagers of the same type in a 15 block radius
         val world = entity.world
 
         // Select the correct entity class based on illager type
@@ -435,8 +434,8 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         val adjustedCooldown = (baseCooldown * (1 + (count - 1) * scaleFactor)).toInt()
 
         // For debugging
-        val illagerTypeName = illagerType.name.lowercase().capitalize()
-        LOGGER.info("$illagerTypeName crowd adjustment: $count nearby ${illagerTypeName}s, base cooldown $baseCooldown → $adjustedCooldown")
+        //val illagerTypeName = illagerType.name.lowercase().capitalize()
+        //LOGGER.info("$illagerTypeName crowd adjustment: $count nearby ${illagerTypeName}s, base cooldown $baseCooldown → $adjustedCooldown")
 
         return adjustedCooldown
     }
@@ -952,7 +951,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
                 return
             }
 
-            // We're the first to spot something - register it
+
             IllagerVoiceRegistry.setLastGroupSpottedTime(illagerType, currentTime)
         }
 
@@ -991,11 +990,9 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         //LOGGER.info("Selected sound: $sound")
         playSound(sound)
 
-        // Cooldown is now set AFTER the sound finishes playing, not here
     }
 
-    // Helper methods to select random sounds from each category
-    // Helper methods to select random sounds from each category
+    // methods to select random sounds from each category
     private fun choosePassiveSound(): SoundEvent {
         // 50% chance for ambient noise, 50% for ambient talk
         return if (random.nextInt(100) < 50) {
@@ -1006,7 +1003,6 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
                 IllagerType.PILLAGER -> PILLAGER_AMBIENT_NOISE_SOUNDS.random(threadSafeRandom)
             }
         } else {
-            // Choose appropriate ambient talk array
             when (illagerType) {
                 IllagerType.EVOKER -> EVOKER_AMBIENT_TALK_SOUNDS.random(threadSafeRandom)
                 IllagerType.VINDICATOR -> VINDICATOR_AMBIENT_TALK_SOUNDS.random(threadSafeRandom)
@@ -1088,6 +1084,6 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         //LOGGER.info("PLAYING SOUND WITH PITCH: $randomPitch, WILL PLAY FOR ${speakingTimer} TICKS")
     }
 
-    // Helper extension to pick a random element from an array
+
     private fun <T> Array<T>.random(random: java.util.Random): T = this[random.nextInt(this.size)]
 }

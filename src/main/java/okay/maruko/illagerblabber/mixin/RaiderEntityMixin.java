@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class RaiderEntityMixin {
     @Inject(method = "tickMovement", at = @At("TAIL"))
     private void onTickMovement(CallbackInfo ci) {
-        // Check if we're on server-side
+        // Check if on server-side
         if (!((RaiderEntity) (Object) this).getWorld().isClient) {
             if ((Object) this instanceof PillagerEntity) {
                 PillagerEntity pillager = (PillagerEntity) (Object) this;

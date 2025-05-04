@@ -32,7 +32,6 @@ object IllagerVoiceRegistry {
     private val lastVindicatorTargets = ConcurrentHashMap<UUID, UUID?>()
     private val lastEvokerTargets = ConcurrentHashMap<UUID, UUID?>()
 
-    // Add these methods to IllagerVoiceRegistry
     fun getLastGroupSpottedTime(type: IllagerType): Long {
         return lastGroupSpottedSoundTime.getOrDefault(type, 0L)
     }
@@ -161,14 +160,14 @@ object IllagerVoiceRegistry {
                 return // Skip the rest of the processing
             }
 
-            // Additional logging
+            /* Additional logging
             if (!hasTarget && hadTarget) {
                 LOGGER.info("VINDICATOR LOST TARGET - Combat debounce: $combatDebounceTimer")
             }
 
             if (!hasTarget && hadTarget && combatDebounceTimer <= 0) {
                 LOGGER.info("VINDICATOR VICTORY CONDITION MET!")
-            }
+            }*/
         }
         if (illagerType == IllagerType.PILLAGER) {
             val pillagerId = illager.uuid
@@ -178,7 +177,7 @@ object IllagerVoiceRegistry {
                 lastPillagerTargets.getOrPut(pillagerId) { illager.target!!.uuid }
             } else if (hadTarget && lastPillagerTargets.containsKey(pillagerId)) {
                 // Target is gone - force a short victory state
-                LOGGER.info("FORCING PILLAGER VICTORY!")
+                //LOGGER.info("FORCING PILLAGER VICTORY!")
                 voiceManager.setState(IllagerState.Victory)
                 victoryTimers[id] = 60 // 3 second victory period
                 hadTargetLastTick[id] = false
@@ -186,10 +185,10 @@ object IllagerVoiceRegistry {
                 return // Skip the rest of the processing
             }
 
-            // Additional logging
+            /*Additional logging
             if (!hasTarget && hadTarget) {
                 LOGGER.info("PILLAGER LOST TARGET - Combat debounce: $combatDebounceTimer")
-            }
+            }*/
         }
         if (illagerType == IllagerType.EVOKER) {
             val evokerId = illager.uuid
@@ -199,7 +198,7 @@ object IllagerVoiceRegistry {
                 lastEvokerTargets.getOrPut(evokerId) { illager.target!!.uuid }
             } else if (hadTarget && lastEvokerTargets.containsKey(evokerId)) {
                 // Target is gone - force a short victory state
-                LOGGER.info("FORCING EVOKER VICTORY!")
+                //LOGGER.info("FORCING EVOKER VICTORY!")
                 voiceManager.setState(IllagerState.Victory)
                 victoryTimers[id] = 60 // 3 second victory period
                 hadTargetLastTick[id] = false
@@ -209,7 +208,7 @@ object IllagerVoiceRegistry {
 
             // Additional logging
             if (!hasTarget && hadTarget) {
-                LOGGER.info("EVOKER LOST TARGET - Combat debounce: $combatDebounceTimer")
+                //LOGGER.info("EVOKER LOST TARGET - Combat debounce: $combatDebounceTimer")
             }
         }
 

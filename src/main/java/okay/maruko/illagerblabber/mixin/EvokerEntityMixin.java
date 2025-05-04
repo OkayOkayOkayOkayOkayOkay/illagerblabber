@@ -24,7 +24,7 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
     @Unique
     private static final Logger LOGGER = LoggerFactory.getLogger("illagerblabber");
 
-    // Constructor is required for extending SpellcastingIllagerEntity
+    // Constructor required for extending SpellcastingIllagerEntity
     protected EvokerEntityMixin(EntityType<? extends SpellcastingIllagerEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -41,7 +41,7 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
         EvokerEntity evoker = (EvokerEntity)(Object)this;
         IllagerVoiceRegistry.INSTANCE.setVictoryState(evoker);
 
-        // Return our silent sound instead of null
+        // Return silent sound instead of null
         cir.setReturnValue(IllagerSounds.INSTANCE.getSILENCE());
     }
 
@@ -50,7 +50,7 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
         EvokerEntity evoker = (EvokerEntity)(Object)this;
         IllagerVoiceRegistry.INSTANCE.setHurtState(evoker);
 
-        // Cancel vanilla sound
+
         cir.setReturnValue(null);
     }
 
