@@ -12,7 +12,7 @@ def mcVersionProps = new Properties()
 mcVersionsFile.withInputStream { mcVersionProps.load(it) }
 
 // Get target version (default to current if not specified)
-def targetMcVersion = project.findProperty("mcVersion") ?: "1.21.1"
+def targetMcVersion = project.findProperty("mcVersion") ?: "1.21.5"
 def versionData = mcVersionProps.getProperty("version.$targetMcVersion")?.split(",")
 if (versionData == null) {
 	throw new GradleException("Unknown Minecraft version: $targetMcVersion")

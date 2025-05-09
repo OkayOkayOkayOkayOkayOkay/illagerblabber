@@ -3,6 +3,7 @@ package okay.maruko.illagerblabber.voice
 import net.minecraft.entity.LivingEntity
 import net.minecraft.entity.mob.EvokerEntity
 import net.minecraft.entity.mob.IllagerEntity
+import net.minecraft.registry.Registries
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvent
 import net.minecraft.util.math.random.Random
@@ -1060,14 +1061,23 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
             else -> 0.9f + threadSafeRandom.nextFloat() * 0.1f  // Range: 0.8-1.0
         }
 
-        illager.world.playSound(
-            null, // No player - play for all nearby
-            illager.x, illager.y, illager.z, // Location
-            sound, // Which sound
-            SoundCategory.HOSTILE, // Category
-            1.0f, // Volume
-            randomPitch // Random pitch
-        )
+        val world = illager.world
+        if (!world.isClient) { // Ensure server-side for this specific call
+            // Get the RegistryEntry for the SoundEvent
+            val soundEventEntry = Registries.SOUND_EVENT.getEntry(sound)
+
+            world.playSound(
+                null, // Player to exclude (null for all)
+                illager.x,
+                illager.y,
+                illager.z,
+                soundEventEntry, // Use RegistryEntry<SoundEvent>
+                SoundCategory.HOSTILE,
+                1.0f, // Volume
+                randomPitch, // Pitch
+                world.random.nextLong() // The seed
+            )
+        }
 
         // Set speaking state with accurate timer based on sound duration
         isSpeaking = true
