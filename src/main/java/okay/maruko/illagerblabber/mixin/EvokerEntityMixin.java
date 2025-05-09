@@ -7,8 +7,6 @@ import net.minecraft.entity.mob.SpellcastingIllagerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.world.World;
 import okay.maruko.illagerblabber.IllagerSounds;
-import okay.maruko.illagerblabber.voice.IllagerState;
-import okay.maruko.illagerblabber.voice.IllagerType;
 import okay.maruko.illagerblabber.voice.IllagerVoiceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +14,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(EvokerEntity.class)
@@ -33,11 +30,11 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
 
     @Inject(method = "getCelebratingSound", at = @At("HEAD"), cancellable = true)
     private void onGetCelebratingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        LOGGER.info("EVOKER RAID VICTORY DETECTED!");
+        //LOGGER.info("EVOKER RAID VICTORY DETECTED!");
         EvokerEntity evoker = (EvokerEntity)(Object)this;
         IllagerVoiceRegistry.INSTANCE.setVictoryState(evoker);
 
-        // Return our silent sound instead of null
+        // Return silent sound instead of null
         cir.setReturnValue(IllagerSounds.INSTANCE.getSILENCE());
     }
 
@@ -53,7 +50,6 @@ public abstract class EvokerEntityMixin extends SpellcastingIllagerEntity {
     // Cancel the vanilla ambient sound
     @Inject(method = "getAmbientSound", at = @At("HEAD"), cancellable = true)
     private void onGetAmbientSound(CallbackInfoReturnable<SoundEvent> cir) {
-        // Return null to prevent vanilla sound
         cir.setReturnValue(null);
     }
 }

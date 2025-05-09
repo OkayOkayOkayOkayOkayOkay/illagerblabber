@@ -388,7 +388,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
             IllagerType.VINDICATOR -> "VINDICATOR"
             IllagerType.PILLAGER -> "PILLAGER"
         }
-        LOGGER.info("VOICE MANAGER CREATED FOR $typeName AT ${illager.x}, ${illager.y}, ${illager.z}")
+        //LOGGER.info("VOICE MANAGER CREATED FOR $typeName AT ${illager.x}, ${illager.y}, ${illager.z}")
     }
 
     private var postVictoryCooldown: Int = 0
@@ -436,7 +436,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
 
         // For debugging
         val illagerTypeName = illagerType.name.lowercase().capitalize()
-        LOGGER.info("$illagerTypeName crowd adjustment: $count nearby ${illagerTypeName}s, base cooldown $baseCooldown → $adjustedCooldown")
+        //LOGGER.info("$illagerTypeName crowd adjustment: $count nearby ${illagerTypeName}s, base cooldown $baseCooldown → $adjustedCooldown")
 
         return adjustedCooldown
     }
@@ -468,9 +468,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
 
     // Duration map in ticks (seconds × 20)
     private val soundDurations = mapOf(
-        // Add these to the soundDurations map
 
-        // Add these to the soundDurations map
 
 
         // Pillager ambient noise durations
@@ -846,7 +844,7 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
 
                 if (currentState is IllagerState.Victory) {
                     postVictoryCooldown = 100  // 5 seconds of cooldown after victory
-                    LOGGER.info("${illagerType.name} VICTORY COMPLETE - Setting post-victory cooldown")
+                    //LOGGER.info("${illagerType.name} VICTORY COMPLETE - Setting post-victory cooldown")
                 }
 
                 // If we just finished a hurt sound, set post-hurt cooldown
@@ -893,7 +891,6 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
                     playAppropriateSound()
                 }
             } else {
-                // Nothing speaking, play the high priority sound
                 playAppropriateSound()
             }
         } else if (soundCooldown <= 0 && !isSpeaking) {
@@ -912,13 +909,13 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         }
     }
 
-    // Replace the problematic method with this:
+
     private fun shouldInterruptCurrentSound(state: IllagerState): Boolean {
         if (!isSpeaking) return false // Nothing to interrupt
 
         // Special handling for hurt sounds
         if (state is IllagerState.Hurt) {
-            // NEVER interrupt another hurt sound that's already playing
+
             if (currentSoundType is IllagerState.Hurt) {
                 return false
             }
@@ -991,10 +988,9 @@ class IllagerVoiceManager(private val illager: IllagerEntity, private val illage
         //LOGGER.info("Selected sound: $sound")
         playSound(sound)
 
-        // Cooldown is now set AFTER the sound finishes playing, not here
     }
 
-    // Helper methods to select random sounds from each category
+    // methods to select random sounds from each category
     private fun choosePassiveSound(): SoundEvent {
         // 50% chance for ambient noise, 50% for ambient talk
         return if (random.nextInt(100) < 50) {

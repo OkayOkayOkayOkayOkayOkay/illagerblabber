@@ -40,18 +40,17 @@ public abstract class PillagerEntityMixin extends IllagerEntity {
 
     @Inject(method = "getCelebratingSound", at = @At("HEAD"), cancellable = true)
     private void onGetCelebratingSound(CallbackInfoReturnable<SoundEvent> cir) {
-        LOGGER.info("PILLAGER RAID VICTORY DETECTED!");
+        //LOGGER.info("PILLAGER RAID VICTORY DETECTED!");
         PillagerEntity pillager = (PillagerEntity)(Object)this;
         IllagerVoiceRegistry.setVictoryState(pillager);
 
-        // Return our silent sound
+        // Return silent sound
         cir.setReturnValue(IllagerSounds.INSTANCE.getSILENCE());
     }
 
     // Cancel the vanilla ambient sound
     @Inject(method = "getAmbientSound", at = @At("HEAD"), cancellable = true)
     private void onGetAmbientSound(CallbackInfoReturnable<SoundEvent> cir) {
-        // Return null to prevent vanilla sound
         cir.setReturnValue(null);
     }
 }

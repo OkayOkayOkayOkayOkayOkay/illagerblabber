@@ -40,20 +40,16 @@ object IllagerVoiceRegistry {
     fun setLastGroupSpottedTime(type: IllagerType, time: Long) {
         lastGroupSpottedSoundTime[type] = time
     }
-    /**
-     * Gets or creates a voice manager for an illager
-     */
+
     @JvmStatic
     fun getVoiceManager(illager: IllagerEntity, type: IllagerType): IllagerVoiceManager {
         return voiceManagers.computeIfAbsent(illager.uuid) {
-            LOGGER.info("CREATING NEW VOICE MANAGER FOR ${type.name}!")
+            //LOGGER.info("CREATING NEW VOICE MANAGER FOR ${type.name}!")
             IllagerVoiceManager(illager, type)
         }
     }
 
-    /**
-     * Gets the illager type for an entity
-     */
+
     @JvmStatic
     private fun getIllagerType(illager: IllagerEntity): IllagerType {
         return when (illager) {
@@ -64,9 +60,7 @@ object IllagerVoiceRegistry {
         }
     }
 
-    /**
-     * Sets an illager entity to the hurt state
-     */
+
     @JvmStatic
     fun setHurtState(entity: IllagerEntity) {
         val id = entity.uuid
@@ -75,9 +69,7 @@ object IllagerVoiceRegistry {
     }
 
 
-    /**
-     * Sets an illager entity to the victory state
-     */
+
     @JvmStatic
     fun setVictoryState(entity: IllagerEntity) {
         val id = entity.uuid
@@ -86,22 +78,20 @@ object IllagerVoiceRegistry {
         victoryTimers[id] = 100 // 5 seconds
     }
 
-    /**
-     * Updates an illager's voice manager and state
-     */
+
     @JvmStatic
     fun updateIllager(illager: IllagerEntity, illagerType: IllagerType) {
         val id = illager.uuid
-        // Increment game tick counter
+
         currentGameTick++
 
         // Skip if already processed this tick
         if (lastProcessedTick.getOrDefault(id, 0L) == currentGameTick) {
-            LOGGER.info("Entity ${id} already processed this tick, skipping")
+           // LOGGER.info("Entity ${id} already processed this tick, skipping")
             return
         }
 
-        // Mark as processed for this tick
+
         lastProcessedTick[id] = currentGameTick
 
         // Process normally
@@ -153,7 +143,7 @@ object IllagerVoiceRegistry {
                 lastVindicatorTargets[vindicatorId] = illager.target!!.uuid
             } else if (hadTarget && lastVindicatorTargets.containsKey(vindicatorId)) {
                 // Target is gone - force a short victory state
-                LOGGER.info("FORCING VINDICATOR VICTORY!")
+                //LOGGER.info("FORCING VINDICATOR VICTORY!")
                 voiceManager.setState(IllagerState.Victory)
                 victoryTimers[id] = 60 //3 seconds victory period
                 hadTargetLastTick[id] = false
@@ -231,13 +221,12 @@ object IllagerVoiceRegistry {
             if (hadTarget) {
                 // Had a target last tick but don't now
                 if (combatDebounceTimer <= 0) {
-                    // Debounce expired, trigger victory
                     voiceManager.setState(IllagerState.Victory)
                     victoryTimer = 100 // Stay in victory state for 5 seconds
                     victoryTimers[id] = victoryTimer
                     hadTargetLastTick[id] = false
                 } else {
-                    // Still in debounce period, stay in combat
+
                     voiceManager.setState(IllagerState.Combat)
                 }
             } else {
